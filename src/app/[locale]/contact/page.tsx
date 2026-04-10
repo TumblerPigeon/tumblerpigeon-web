@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
@@ -23,7 +24,8 @@ function SocialLink({ href, label, handle }: { href: string; label: string; hand
   );
 }
 
-export default function ContactPage() {
+export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   const t = useTranslations('contact');
 
   const socials = [

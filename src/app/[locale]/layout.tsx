@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -16,6 +16,9 @@ export default async function LocaleLayout({
   const { locale } = params;
 
   if (!locales.includes(locale)) notFound();
+
+  // Must be called before any translations are used in Server Components
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 

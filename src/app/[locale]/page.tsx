@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/navigation';
 import LogoImage from '@/components/LogoImage';
 import { getAllPosts } from '@/lib/posts';
@@ -216,7 +217,8 @@ function SocialProofSection() {
   );
 }
 
-export default function HomePage() {
+export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   return (
     <>
       <HeroSection />

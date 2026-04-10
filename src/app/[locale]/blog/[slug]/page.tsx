@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getPost, getAllPostSlugs, getRelatedPosts } from '@/lib/posts';
@@ -40,6 +40,8 @@ function formatDate(dateStr: string, locale: string): string {
 }
 
 export default async function BlogPostPage({ params }: Props) {
+  setRequestLocale(params.locale);
+
   const post = getPost(params.slug);
   if (!post) notFound();
 
