@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "discord": "Discord",
+    "patreon": "Patreon",
+    "contact": "İletişim",
+    "merch": "Mağaza"
+  },
+  "hero": {
+    "line1": "TUMBLER",
+    "line2": "PIGEON",
+    "tagline": "Oyun Geliştirme. İçerik. Kaos.",
+    "sub": "Dünyalar inşa ediyoruz, gürültü yaratıyoruz ve hepsini belgeliyoruz.",
+    "cta_blog": "Blog'u Oku",
+    "cta_discord": "Discord'a Katıl"
+  },
+  "about": {
+    "title": "KİM BU?",
+    "body": "TumblerPigeon, indie sahnesinin kıyılarından faaliyet gösteren solo bir oyun geliştirici ve içerik üreticisi. Kısmen stüdyo, kısmen fanzin, kısmen ateşli rüya. Oyun yapıyoruz, oyun yapımı hakkında konuşuyoruz ve bazen bunu yaparken maske takıyoruz. Kaosa dahil olmak istiyorsan abone ol.",
+    "label_games": "Yapılan Oyunlar",
+    "label_posts": "Blog Yazıları",
+    "label_years": "Yıl Geçti",
+    "latest_posts_divider": "Son Yazılar",
+    "view_all": "Tüm Yazıları Gör"
+  },
+  "home": {
+    "find_online": "TumblerPigeon'ı burada bulun"
+  },
+  "newsletter": {
+    "title": "DİSPATCH'İ AL",
+    "subtitle": "Oyunlar, geliştirme günlükleri ve daha fazlası hakkında düzensiz güncellemeler. Spam yok. Muhtemelen.",
+    "placeholder": "email@adresin.com",
+    "button": "Abone Ol",
+    "disclaimer": "Spam yok. İstediğinde çık. Muhtemelen."
+  },
+  "blog": {
+    "title": "BLOG",
+    "subtitle": "Geliştirme günlükleri, ürün incelemeleri ve kaotik bir indie hayatından haberler.",
+    "search_placeholder": "Yazı ara...",
+    "all": "Tümü",
+    "read_more": "Devamını Oku",
+    "min_read": "dk okuma",
+    "no_posts": "Yazı bulunamadı. Yakında kontrol et.",
+    "nothing_label": "HİÇBİR ŞEY.",
+    "categories": {
+      "game-dev": "Oyun Geliştirme",
+      "income-business": "Gelir & İş",
+      "product-reviews": "Ürün İncelemeleri",
+      "life-misc": "Yaşam & Çeşitli"
+    }
+  },
+  "post": {
+    "back": "← Blog'a Dön",
+    "related": "İlgili Yazılar",
+    "comments": "Yorumlar"
+  },
+  "contact": {
+    "title": "İLETİŞİME GEÇ",
+    "subtitle": "İş birliği, iş, basın veya sadece merhaba demek için.",
+    "email_label": "E-posta",
+    "form_name": "Ad",
+    "form_email": "E-posta",
+    "form_message": "Mesaj",
+    "form_submit": "Gönder",
+    "form_placeholder_name": "Adın",
+    "form_placeholder_email": "email@adresin.com",
+    "form_placeholder_message": "Aklında ne var?",
+    "social_title": "Beni Online Bul",
+    "drop_message": "Mesaj Bırak",
+    "direct_email": "Doğrudan E-posta",
+    "response_time": "Yanıt süresi: Genellikle 24–48 saat. Acil için Discord DM daha hızlı."
+  },
+  "merch": {
+    "title": "MAĞAZA",
+    "store_label": "Mağaza",
+    "coming_soon": "YAKINDA",
+    "subtitle": "Bir şeyler pişiriliyor.",
+    "body": "Gece 3'e kadar shader debug eden insanlar için sokak kıyafetleri. TumblerPigeon ürünleri hazırlanıyor — sınırlı drop'lar, tuhaf tasarımlar, kaliteli ürünler. İlk öğrenenlerden olmak için listeye gir.",
+    "notify_button": "Beni Haberdar Et",
+    "notify_placeholder": "email@adresin.com",
+    "on_list_title": "LİSTEDESİN.",
+    "on_list_body": "Bir şey çıktığında ilk sen duyacaksın.",
+    "fine_print": "Sınırlı sayıda. Seri üretim yok. Yeraltında kalır."
+  },
+  "footer": {
+    "tagline": "Oyun Geliştirme. İçerik. Kaos.",
+    "rights": "Tüm hakları saklıdır.",
+    "made": "Geç saatler ve kötü kararlarla yapıldı."
+  }
+}

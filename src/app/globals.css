@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Custom Properties ────────────────────────────────────────────────────── */
+:root {
+  --bg: #0d0b0e;
+  --bg-card: #161318;
+  --cream: #f5e6c8;
+  --cream-muted: #c8b89a;
+  --cream-dim: #8a7560;
+  --blue: #1a3adb;
+  --blue-bright: #2e52ff;
+  --red: #c0392b;
+}
+
+/* ── Reset / Base ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--cream-muted);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Grain Texture Overlay ────────────────────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+
+/* ── Selection ────────────────────────────────────────────────────────────── */
+::selection {
+  background-color: var(--blue);
+  color: var(--cream);
+}
+
+/* ── Scrollbar ────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2530;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3540;
+}
+
+/* ── Focus styles ─────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ── Typography display heading ──────────────────────────────────────────── */
+.display-heading {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 0.95;
+}
+
+/* ── Hero gradient ────────────────────────────────────────────────────────── */
+.hero-gradient {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 0%,
+    rgba(26, 58, 219, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+/* ── Horizontal rule ──────────────────────────────────────────────────────── */
+hr {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Utility: text gradient ──────────────────────────────────────────────── */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #2e52ff, #1a3adb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, #e84c3d, #c0392b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glitch text ─────────────────────────────────────────────────────────── */
+.glitch {
+  animation: glitch 4s infinite;
+}
+
+/* ── Animation delays ────────────────────────────────────────────────────── */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Fill animations use opacity:0 at start */
+[class*="animate-fade"] {
+  opacity: 0;
+}
+
+/* ── MDX prose overrides ─────────────────────────────────────────────────── */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+.prose a {
+  text-decoration-color: var(--blue);
+  text-underline-offset: 3px;
+}
+
+.prose code:not(pre code) {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.875em;
+}
+
+.prose blockquote {
+  border-left-width: 3px;
+  font-style: normal;
+}
+
+.prose img {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}

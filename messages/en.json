@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "discord": "Discord",
+    "patreon": "Patreon",
+    "contact": "Contact",
+    "merch": "Merch"
+  },
+  "hero": {
+    "line1": "TUMBLER",
+    "line2": "PIGEON",
+    "tagline": "Game Dev. Content. Chaos.",
+    "sub": "Building worlds, making noise, and documenting all of it.",
+    "cta_blog": "Read the Blog",
+    "cta_discord": "Join the Discord"
+  },
+  "about": {
+    "title": "WHO IS THIS?",
+    "body": "TumblerPigeon is a solo game developer and content creator operating from the fringes of the indie scene. Part studio, part zine, part fever dream. We make games, we talk about making games, and sometimes we wear a mask while doing it. Subscribe if you want in on the chaos.",
+    "label_games": "Games Made",
+    "label_posts": "Blog Posts",
+    "label_years": "Years In",
+    "latest_posts_divider": "Latest Posts",
+    "view_all": "View All Posts"
+  },
+  "home": {
+    "find_online": "Find TumblerPigeon on"
+  },
+  "newsletter": {
+    "title": "GET THE DISPATCH",
+    "subtitle": "Irregular updates on games, dev logs, and whatever else is happening. No spam. Probably.",
+    "placeholder": "your@email.com",
+    "button": "Subscribe",
+    "disclaimer": "No spam. Unsubscribe whenever. Probably."
+  },
+  "blog": {
+    "title": "THE BLOG",
+    "subtitle": "Dev logs, hot takes, product reviews, and dispatches from a chaotic indie life.",
+    "search_placeholder": "Search posts...",
+    "all": "All",
+    "read_more": "Read More",
+    "min_read": "min read",
+    "no_posts": "No posts found. Check back soon.",
+    "nothing_label": "NOTHING.",
+    "categories": {
+      "game-dev": "Game Dev",
+      "income-business": "Income & Business",
+      "product-reviews": "Product Reviews",
+      "life-misc": "Life & Misc"
+    }
+  },
+  "post": {
+    "back": "← Back to Blog",
+    "related": "Related Posts",
+    "comments": "Comments"
+  },
+  "contact": {
+    "title": "GET IN TOUCH",
+    "subtitle": "For collabs, business, press, or just to say hi.",
+    "email_label": "Email",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "form_submit": "Send It",
+    "form_placeholder_name": "Your name",
+    "form_placeholder_email": "your@email.com",
+    "form_placeholder_message": "What's on your mind?",
+    "social_title": "Find Me Online",
+    "drop_message": "Drop a Message",
+    "direct_email": "Direct Email",
+    "response_time": "Response time: Usually 24–48h. For urgent stuff, Discord DM is faster."
+  },
+  "merch": {
+    "title": "MERCH",
+    "store_label": "Merch Store",
+    "coming_soon": "COMING SOON",
+    "subtitle": "Something is being cooked.",
+    "body": "Streetwear for people who stay up until 3am debugging shaders. TumblerPigeon gear is in the works — limited drops, weird designs, proper quality. Get on the list to be first when it lands.",
+    "notify_button": "Notify Me",
+    "notify_placeholder": "your@email.com",
+    "on_list_title": "ON THE LIST.",
+    "on_list_body": "You'll hear it first when things drop.",
+    "fine_print": "Limited drops. No mass production. Keep it underground."
+  },
+  "footer": {
+    "tagline": "Game Dev. Content. Chaos.",
+    "rights": "All rights reserved.",
+    "made": "Made with late nights and bad decisions."
+  }
+}
