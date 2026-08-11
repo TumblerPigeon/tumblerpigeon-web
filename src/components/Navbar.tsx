@@ -99,7 +99,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="min-h-11 px-3 py-3 text-sm font-semibold text-cream-muted transition-colors hover:text-cream"
             >
-              {t('pigeonarc')} ↗
+              {t('pigeonarc')}
             </a>
           </div>
 
@@ -172,19 +172,18 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="group grid grid-cols-[1fr_auto] items-center border-b editorial-rule py-4 text-cream"
+                className="block border-b editorial-rule py-4 text-cream"
               >
                 <span className="font-display text-5xl tracking-[0.045em] sm:text-6xl">{t('pigeonarc')}</span>
-                <span className="text-brand-accent transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
               </a>
             </div>
 
             <div className="grid grid-cols-2 gap-3 border-t editorial-rule pt-5">
               <a href={SITE_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center text-sm font-semibold text-cream">
-                {t('tiktok')} ↗
+                {t('tiktok')}
               </a>
               <a href={SITE_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center text-sm font-semibold text-cream">
-                {t('instagram')} ↗
+                {t('instagram')}
               </a>
             </div>
           </div>

@@ -35,16 +35,11 @@ const config: Config = {
       },
       animation: {
         reveal: 'reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both',
-        'image-in': 'imageIn 900ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both',
       },
       keyframes: {
         reveal: {
           from: { opacity: '0', transform: 'translateY(18px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
-        },
-        imageIn: {
-          from: { opacity: '0', transform: 'scale(0.96) rotate(1deg)' },
-          to: { opacity: '1', transform: 'scale(1) rotate(0)' },
         },
       },
       typography: {

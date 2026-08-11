@@ -25,10 +25,9 @@ export default function SocialSection() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group grid min-h-16 grid-cols-[1fr_auto] items-center gap-4 border-b border-bg/25 py-4 transition-colors hover:bg-bg hover:px-4 hover:text-cream"
+              className="block min-h-16 border-b border-bg/25 py-4 transition-colors hover:bg-bg hover:px-4 hover:text-cream"
             >
               <span className="font-display text-4xl tracking-[0.05em] sm:text-5xl">{link.label}</span>
-              <span className="text-lg transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
             </a>
           ))}
         </div>

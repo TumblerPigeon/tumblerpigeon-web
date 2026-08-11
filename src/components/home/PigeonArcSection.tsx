@@ -24,7 +24,7 @@ export default function PigeonArcSection() {
             rel="noopener noreferrer"
             className="mt-8 inline-flex min-h-12 items-center justify-between gap-10 border border-cream/25 px-6 py-3 text-sm font-bold text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
           >
-            {t('cta')} <span aria-hidden="true">↗</span>
+            {t('cta')}
           </a>
         </div>
       </div>
