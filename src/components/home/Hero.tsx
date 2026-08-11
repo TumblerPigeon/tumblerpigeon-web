@@ -5,8 +5,11 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="hero-wash min-h-svh border-b editorial-rule px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
-      <div className="mx-auto flex min-h-[calc(100svh-12rem)] max-w-[88rem] items-center">
+    <section className="hero-wash relative isolate min-h-svh overflow-hidden border-b editorial-rule px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
+      <div className="hero-artwork pointer-events-none absolute inset-0 z-0 select-none" aria-hidden="true" />
+      <div className="hero-artwork-shade pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
+
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-12rem)] max-w-[88rem] items-center">
         <div className="motion-reveal w-full">
           <p className="mb-5 text-sm font-semibold text-brand-accent">{t('eyebrow')}</p>
           <h1 className="font-display text-[clamp(5.2rem,24vw,9rem)] leading-[0.74] tracking-[0.025em] text-cream sm:text-[clamp(8rem,20vw,13rem)] lg:text-[clamp(10rem,16vw,16rem)]">

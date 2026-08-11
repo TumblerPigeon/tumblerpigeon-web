@@ -15,8 +15,7 @@ export default function PigeonArcSection() {
         </div>
 
         <div className="lg:col-span-6 lg:col-start-7">
-          <p className="text-sm font-semibold text-brand-accent">{t('label')}</p>
-          <h2 className="mt-5 font-display text-6xl leading-[0.9] tracking-[0.04em] text-cream sm:text-8xl">{t('title')}</h2>
+          <h2 className="font-display text-6xl leading-[0.9] tracking-[0.04em] text-cream sm:text-8xl">{t('title')}</h2>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-cream-muted">{t('body')}</p>
           <a
             href={SITE_LINKS.pigeonarc}

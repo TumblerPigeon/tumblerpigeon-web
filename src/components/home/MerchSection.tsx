@@ -8,8 +8,7 @@ export default function MerchSection() {
     <section className="overflow-hidden bg-cream px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
-          <p className="text-sm font-semibold text-bg/65">{t('label')}</p>
-          <h2 className="mt-6 font-display text-[clamp(5rem,13vw,10rem)] leading-[0.78] tracking-[0.035em]">
+          <h2 className="font-display text-[clamp(5rem,13vw,10rem)] leading-[0.78] tracking-[0.035em]">
             {t('title_line1')}
             <span className="block text-brand-accent">{t('title_line2')}</span>
           </h2>

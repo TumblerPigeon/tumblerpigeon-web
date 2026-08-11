@@ -9,8 +9,7 @@ export default function SocialSection() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
-            <p className="text-sm font-semibold text-bg/65">{t('label')}</p>
-            <h2 className="mt-5 font-display text-[clamp(5.5rem,15vw,12rem)] leading-[0.75] tracking-[0.025em]">
+            <h2 className="font-display text-[clamp(5.5rem,15vw,12rem)] leading-[0.75] tracking-[0.025em]">
               {t('title_line1')}
               <span className="block">{t('title_line2')}</span>
             </h2>

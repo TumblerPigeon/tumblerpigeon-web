@@ -88,6 +88,36 @@ body > * {
     linear-gradient(90deg, transparent 0 49.9%, rgb(var(--color-ink) / 0.045) 50%, transparent 50.1%);
 }
 
+.hero-artwork {
+  background-image: url('/images/logo.png');
+  background-position: 62% 24%;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  filter: saturate(0.55) contrast(0.9) brightness(0.72) blur(0.4px);
+  opacity: 0.22;
+}
+
+.hero-artwork-shade {
+  background:
+    linear-gradient(90deg, rgb(var(--color-canvas) / 0.97) 0%, rgb(var(--color-canvas) / 0.88) 48%, rgb(var(--color-canvas) / 0.56) 100%),
+    linear-gradient(180deg, rgb(var(--color-canvas) / 0.14) 0%, rgb(var(--color-canvas) / 0.25) 48%, rgb(var(--color-canvas) / 0.8) 100%);
+}
+
+@media (min-width: 768px) {
+  .hero-artwork {
+    background-position: calc(100% + 4rem) center;
+    background-size: min(82vw, 82rem) auto;
+    filter: saturate(0.62) contrast(0.9) brightness(0.76) blur(0.4px);
+    opacity: 0.34;
+  }
+
+  .hero-artwork-shade {
+    background:
+      linear-gradient(90deg, rgb(var(--color-canvas)) 0%, rgb(var(--color-canvas) / 0.98) 26%, rgb(var(--color-canvas) / 0.9) 45%, rgb(var(--color-canvas) / 0.6) 68%, rgb(var(--color-canvas) / 0.2) 100%),
+      linear-gradient(180deg, rgb(var(--color-canvas) / 0.18) 0%, transparent 35%, rgb(var(--color-canvas) / 0.5) 100%);
+  }
+}
+
 /* Kept for the existing merch route, now using the single brand accent. */
 .hero-gradient {
   background: radial-gradient(circle at 50% 10%, rgb(var(--color-accent) / 0.13), transparent 52%);
