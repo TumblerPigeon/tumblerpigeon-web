@@ -29,11 +29,9 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
   const t = useTranslations('contact');
 
   const socials = [
-    { label: 'Discord', handle: 'Join the server', href: 'https://discord.gg/placeholder' },
-    { label: 'Patreon', handle: 'patreon.com/tumblerpigeon', href: 'https://patreon.com/tumblerpigeon' },
     { label: 'TikTok', handle: '@tumblerpigeon', href: 'https://tiktok.com/@tumblerpigeon' },
-    { label: 'GitHub', handle: 'tumblerpigeon', href: 'https://github.com/tumblerpigeon' },
     { label: 'Instagram', handle: '@tumblerpigeon', href: 'https://instagram.com/tumblerpigeon' },
+    { label: 'Patreon', handle: 'patreon.com/tumblerpigeon', href: 'https://patreon.com/tumblerpigeon' },
   ];
 
   return (

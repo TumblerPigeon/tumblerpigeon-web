@@ -25,12 +25,12 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TumblerPigeon — Game Dev. Content. Chaos.',
+    default: 'TumblerPigeon — Creator. Persona. Internet.',
     template: '%s | TumblerPigeon',
   },
   description:
-    'TumblerPigeon is a solo game developer and content creator brand. Dev logs, games, merch, and more.',
-  keywords: ['game development', 'indie games', 'content creator', 'TumblerPigeon'],
+    'TumblerPigeon is an anonymous masked creator identity sharing original content, visual experiments, and internet culture.',
+  keywords: ['content creator', 'social media creator', 'internet culture', 'TumblerPigeon'],
   openGraph: { siteName: 'TumblerPigeon', type: 'website' },
   twitter: { card: 'summary_large_image', creator: '@tumblerpigeon' },
 };

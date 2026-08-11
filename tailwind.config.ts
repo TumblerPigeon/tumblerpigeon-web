@@ -1,29 +1,32 @@
 import type { Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
 
+const color = (token: string) => `rgb(var(${token}) / <alpha-value>)`;
+
 const config: Config = {
-  content: [
-    './src/**/*.{ts,tsx,mdx}',
-    './content/**/*.mdx',
-  ],
+  content: ['./src/**/*.{ts,tsx,mdx}', './content/**/*.mdx'],
   theme: {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#0d0b0e',
-          card: '#161318',
-          elevated: '#1e1a22',
+          DEFAULT: color('--color-canvas'),
+          card: color('--color-surface'),
+          elevated: color('--color-surface-raised'),
         },
         cream: {
-          DEFAULT: '#f5e6c8',
-          muted: '#c8b89a',
-          dim: '#8a7560',
+          DEFAULT: color('--color-ink'),
+          muted: color('--color-ink-muted'),
+          dim: color('--color-ink-dim'),
         },
         brand: {
-          blue: '#1a3adb',
-          'blue-bright': '#2e52ff',
-          red: '#c0392b',
-          'red-bright': '#e84c3d',
+          DEFAULT: color('--color-accent'),
+          accent: color('--color-accent'),
+          'accent-bright': color('--color-accent-strong'),
+          // Compatibility aliases for dormant routes while the old palette is retired.
+          blue: color('--color-accent'),
+          'blue-bright': color('--color-accent-strong'),
+          red: color('--color-accent'),
+          'red-bright': color('--color-accent-strong'),
         },
       },
       fontFamily: {
@@ -31,49 +34,33 @@ const config: Config = {
         body: ['var(--font-space-grotesk)', ...fontFamily.sans],
         mono: ['var(--font-space-mono)', ...fontFamily.mono],
       },
-      backgroundImage: {
-        'noise': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E\")",
-      },
       animation: {
-        'fade-up': 'fadeUp 0.6s ease-out forwards',
-        'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'glitch': 'glitch 3s infinite',
-        'float': 'float 6s ease-in-out infinite',
+        reveal: 'reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both',
+        'image-in': 'imageIn 900ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both',
       },
       keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+        reveal: {
+          from: { opacity: '0', transform: 'translateY(18px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
         },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        glitch: {
-          '0%, 90%, 100%': { transform: 'translate(0)' },
-          '92%': { transform: 'translate(-2px, 1px)' },
-          '94%': { transform: 'translate(2px, -1px)' },
-          '96%': { transform: 'translate(-1px, 2px)' },
-          '98%': { transform: 'translate(1px, -1px)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' },
+        imageIn: {
+          from: { opacity: '0', transform: 'scale(0.96) rotate(1deg)' },
+          to: { opacity: '1', transform: 'scale(1) rotate(0)' },
         },
       },
       typography: {
         DEFAULT: {
           css: {
-            '--tw-prose-body': '#c8b89a',
-            '--tw-prose-headings': '#f5e6c8',
-            '--tw-prose-links': '#2e52ff',
-            '--tw-prose-bold': '#f5e6c8',
-            '--tw-prose-code': '#f5e6c8',
-            '--tw-prose-pre-bg': '#161318',
-            '--tw-prose-pre-code': '#f5e6c8',
-            '--tw-prose-hr': '#2a2530',
-            '--tw-prose-quotes': '#c8b89a',
-            '--tw-prose-quote-borders': '#1a3adb',
+            '--tw-prose-body': 'rgb(var(--color-ink-muted))',
+            '--tw-prose-headings': 'rgb(var(--color-ink))',
+            '--tw-prose-links': 'rgb(var(--color-accent))',
+            '--tw-prose-bold': 'rgb(var(--color-ink))',
+            '--tw-prose-code': 'rgb(var(--color-ink))',
+            '--tw-prose-pre-bg': 'rgb(var(--color-surface))',
+            '--tw-prose-pre-code': 'rgb(var(--color-ink))',
+            '--tw-prose-hr': 'rgb(var(--color-ink) / 0.12)',
+            '--tw-prose-quotes': 'rgb(var(--color-ink-muted))',
+            '--tw-prose-quote-borders': 'rgb(var(--color-accent))',
             maxWidth: 'none',
           },
         },

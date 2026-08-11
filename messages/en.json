@@ -1,37 +1,110 @@
 {
   "nav": {
-    "blog": "Blog",
-    "discord": "Discord",
-    "patreon": "Patreon",
-    "contact": "Contact",
-    "merch": "Merch"
+    "home": "Home",
+    "about": "About",
+    "merch": "Merch",
+    "pigeonarc": "PigeonArc",
+    "tiktok": "TikTok",
+    "instagram": "Instagram",
+    "switch_language": "Switch language",
+    "toggle_menu": "Toggle menu",
+    "primary_label": "Primary navigation",
+    "menu": "Menu",
+    "close": "Close",
+    "menu_status": "Public index",
+    "online": "Online"
   },
   "hero": {
+    "eyebrow": "An internet character in the wild",
     "line1": "TUMBLER",
     "line2": "PIGEON",
-    "tagline": "Game Dev. Content. Chaos.",
-    "sub": "Building worlds, making noise, and documenting all of it.",
-    "cta_blog": "Read the Blog",
-    "cta_discord": "Join the Discord"
+    "artwork_alt": "Illustrated TumblerPigeon masked character surrounded by pigeons and cats",
+    "intro": "Masked observations, visual detours, and slightly unhinged transmissions from somewhere on the internet.",
+    "primary_cta": "Watch on TikTok",
+    "secondary_cta": "See Instagram",
+    "footer_left": "New sightings arrive without warning",
+    "footer_right": "Scroll to inspect",
+    "meta": {
+      "subject_label": "Subject",
+      "subject": "Tumbler Pigeon",
+      "identity_label": "Identity",
+      "identity": "Unknown",
+      "status_label": "Status",
+      "status": "Online",
+      "location_label": "Location",
+      "location": "Undisclosed"
+    }
+  },
+  "featured": {
+    "label": "Featured sightings",
+    "title": "FROM THE FEED.",
+    "intro": "Three recurring shapes in the TumblerPigeon signal. Placeholder transmissions today; real posts, films, and sightings tomorrow.",
+    "open_channel": "Open channel",
+    "short_form": {
+      "platform": "TikTok / Short form",
+      "title": "QUICK SIGHTINGS",
+      "body": "Fast character moments, odd observations, and ideas built for the scroll."
+    },
+    "visuals": {
+      "platform": "Instagram / Visual",
+      "title": "MASK STUDIES",
+      "body": "Frames, edits, objects, and visual fragments from the TumblerPigeon world."
+    },
+    "dispatches": {
+      "platform": "Patreon / Dispatch",
+      "title": "BEHIND THE SIGNAL",
+      "body": "Longer notes and off-feed material for anyone following the trail."
+    }
   },
   "about": {
-    "title": "WHO IS THIS?",
-    "body": "TumblerPigeon is a solo game developer and content creator operating from the fringes of the indie scene. Part studio, part zine, part fever dream. We make games, we talk about making games, and sometimes we wear a mask while doing it. Subscribe if you want in on the chaos.",
-    "label_games": "Games Made",
-    "label_posts": "Blog Posts",
-    "label_years": "Years In",
-    "latest_posts_divider": "Latest Posts",
-    "view_all": "View All Posts"
+    "label": "About the subject",
+    "title_line1": "THE FACE STAYS",
+    "title_line2": "OUT OF FRAME.",
+    "body": "TumblerPigeon is a masked internet persona collecting strange details, visual jokes, character moments, and whatever else refuses to fit neatly into a category.",
+    "note_label": "Field note",
+    "note": "The character is consistent. The format is not.",
+    "details": {
+      "face": {
+        "label": "Face",
+        "value": "Obscured"
+      },
+      "frequency": {
+        "label": "Frequency",
+        "value": "Irregular"
+      },
+      "format": {
+        "label": "Format",
+        "value": "Unfixed"
+      }
+    }
   },
-  "home": {
-    "find_online": "Find TumblerPigeon on"
+  "pigeonarc": {
+    "label": "Another corner of the nest",
+    "body": "Games and software live at PigeonArc, a related anonymous brand with its own signal and purpose.",
+    "cta": "Enter PigeonArc"
+  },
+  "merch_home": {
+    "label": "Evidence locker / Merch",
+    "title_line1": "WEAR THE",
+    "title_line2": "SIGHTING.",
+    "body": "TumblerPigeon objects are taking shape: limited pieces, odd details, and character-first designs. Nothing mass-produced. Nothing rushed.",
+    "cta": "Inspect the drop",
+    "edition": "Drop 00",
+    "sample_label": "Concept sample / not final"
+  },
+  "social": {
+    "label": "Open channels",
+    "status": "Signal active",
+    "title_line1": "FOLLOW THE",
+    "title_line2": "SIGHTINGS.",
+    "body": "The feed moves fast. These are the places to catch TumblerPigeon in motion."
   },
   "newsletter": {
     "title": "GET THE DISPATCH",
-    "subtitle": "Irregular updates on games, dev logs, and whatever else is happening. No spam. Probably.",
+    "subtitle": "Occasional TumblerPigeon updates from across the internet.",
     "placeholder": "your@email.com",
     "button": "Subscribe",
-    "disclaimer": "No spam. Unsubscribe whenever. Probably."
+    "disclaimer": "No spam. Unsubscribe whenever."
   },
   "blog": {
     "title": "THE BLOG",
@@ -56,35 +129,45 @@
   },
   "contact": {
     "title": "GET IN TOUCH",
-    "subtitle": "For collabs, business, press, or just to say hi.",
+    "subtitle": "For collaborations, business, press, or a message for the persona behind the mask.",
     "email_label": "Email",
     "form_name": "Name",
     "form_email": "Email",
     "form_message": "Message",
     "form_submit": "Send It",
-    "form_placeholder_name": "Your name",
+    "form_placeholder_name": "Your name or alias",
     "form_placeholder_email": "your@email.com",
     "form_placeholder_message": "What's on your mind?",
-    "social_title": "Find Me Online",
+    "social_title": "Find TumblerPigeon Online",
     "drop_message": "Drop a Message",
     "direct_email": "Direct Email",
-    "response_time": "Response time: Usually 24–48h. For urgent stuff, Discord DM is faster."
+    "response_time": "Response time is usually 24–48 hours."
   },
   "merch": {
     "title": "MERCH",
     "store_label": "Merch Store",
     "coming_soon": "COMING SOON",
-    "subtitle": "Something is being cooked.",
-    "body": "Streetwear for people who stay up until 3am debugging shaders. TumblerPigeon gear is in the works — limited drops, weird designs, proper quality. Get on the list to be first when it lands.",
+    "subtitle": "Objects from the TumblerPigeon universe.",
+    "body": "Wearable and collectible ideas are taking shape behind the mask. Expect limited releases, strange details, and designs made for the world of TumblerPigeon.",
     "notify_button": "Notify Me",
     "notify_placeholder": "your@email.com",
     "on_list_title": "ON THE LIST.",
-    "on_list_body": "You'll hear it first when things drop.",
-    "fine_print": "Limited drops. No mass production. Keep it underground."
+    "on_list_body": "You'll hear it first when something drops.",
+    "fine_print": "Limited releases. No mass production."
   },
   "footer": {
-    "tagline": "Game Dev. Content. Chaos.",
+    "signal_label": "End of current transmission",
+    "tagline": "A masked internet persona. Sightings, images, objects, and other loose signals.",
+    "navigate": "Index",
+    "elsewhere": "Channels",
+    "related": "Related signal",
+    "home": "Home",
+    "about": "About",
+    "merch": "Merch",
+    "contact": "Contact",
+    "status": "Status",
+    "online": "Online",
     "rights": "All rights reserved.",
-    "made": "Made with late nights and bad decisions."
+    "made": "Location undisclosed."
   }
 }

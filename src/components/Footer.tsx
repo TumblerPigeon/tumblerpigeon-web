@@ -1,70 +1,68 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
+import { CREATOR_SOCIALS, SITE_LINKS } from '@/lib/site-links';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const year = new Date().getFullYear();
 
+  const navigationLinks = [
+    { href: '/' as const, label: t('home') },
+    { href: '/#about' as const, label: t('about') },
+    { href: '/merch' as const, label: t('merch') },
+    { href: '/contact' as const, label: t('contact') },
+  ];
+
   return (
-    <footer className="border-t border-white/5 bg-bg mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {/* Brand */}
-          <div>
-            <div className="font-display text-4xl tracking-widest text-cream mb-2">
-              TUMBLER<span className="text-brand-blue">.</span>
-              <br />
-              PIGEON
+    <footer className="bg-bg px-4 pb-7 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-[92rem]">
+        <div className="grid gap-12 border-b editorial-rule pb-16 lg:grid-cols-12">
+          <div className="lg:col-span-6">
+            <p className="editorial-label text-brand-accent">{t('signal_label')}</p>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-cream-muted">{t('tagline')}</p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-5 lg:col-start-8">
+            <div className="flex flex-col gap-3">
+              <span className="editorial-label mb-2 text-cream-dim">{t('navigate')}</span>
+              {navigationLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="text-sm text-cream-muted transition-colors hover:text-brand-accent">
+                  {link.label}
+                </Link>
+              ))}
             </div>
-            <p className="text-cream-dim text-sm font-body mt-3">{t('tagline')}</p>
-          </div>
 
-          {/* Links */}
-          <div className="flex flex-col gap-2">
-            <span className="text-xs font-mono text-cream-dim uppercase tracking-widest mb-2">Navigate</span>
-            {[
-              { href: '/blog' as const, label: 'Blog' },
-              { href: '/merch' as const, label: 'Merch' },
-              { href: '/contact' as const, label: 'Contact' },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-cream-muted hover:text-cream text-sm font-body transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+            <div className="flex flex-col gap-3">
+              <span className="editorial-label mb-2 text-cream-dim">{t('elsewhere')}</span>
+              {CREATOR_SOCIALS.map((link) => (
+                <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-cream-muted transition-colors hover:text-brand-accent">
+                  {link.label} ↗
+                </a>
+              ))}
+            </div>
 
-          {/* Social */}
-          <div className="flex flex-col gap-2">
-            <span className="text-xs font-mono text-cream-dim uppercase tracking-widest mb-2">Elsewhere</span>
-            {[
-              { href: 'https://discord.gg/placeholder', label: 'Discord' },
-              { href: 'https://patreon.com/tumblerpigeon', label: 'Patreon' },
-              { href: 'https://tiktok.com/@tumblerpigeon', label: 'TikTok' },
-              { href: 'https://github.com/tumblerpigeon', label: 'GitHub' },
-              { href: 'https://instagram.com/tumblerpigeon', label: 'Instagram' },
-            ].map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-cream-muted hover:text-cream text-sm font-body transition-colors"
-              >
-                {link.label} ↗
+            <div className="flex flex-col gap-3">
+              <span className="editorial-label mb-2 text-cream-dim">{t('related')}</span>
+              <a href={SITE_LINKS.pigeonarc} target="_blank" rel="noopener noreferrer" className="text-sm text-cream-muted transition-colors hover:text-brand-accent">
+                PigeonArc ↗
               </a>
-            ))}
+              <span className="editorial-label mt-3 text-cream-dim">{t('status')}</span>
+              <span className="flex items-center gap-2 text-sm text-cream">
+                <span className="h-2 w-2 bg-brand-accent" aria-hidden="true" /> {t('online')}
+              </span>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-cream-dim text-xs font-mono">
-            © {year} TumblerPigeon — {t('rights')}
-          </p>
-          <p className="text-cream-dim text-xs font-mono opacity-50">{t('made')}</p>
+        <div className="overflow-hidden border-b editorial-rule py-8 lg:py-10">
+          <div className="font-display text-[clamp(4rem,13.2vw,13rem)] leading-[0.78] tracking-[0.025em] text-cream whitespace-nowrap">
+            TUMBLER PIGEON
+          </div>
+        </div>
+
+        <div className="editorial-label flex flex-col gap-2 pt-6 text-cream-dim sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} TumblerPigeon — {t('rights')}</p>
+          <p>{t('made')}</p>
         </div>
       </div>
     </footer>

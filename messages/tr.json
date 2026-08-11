@@ -1,37 +1,110 @@
 {
   "nav": {
-    "blog": "Blog",
-    "discord": "Discord",
-    "patreon": "Patreon",
-    "contact": "İletişim",
-    "merch": "Mağaza"
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "merch": "Mağaza",
+    "pigeonarc": "PigeonArc",
+    "tiktok": "TikTok",
+    "instagram": "Instagram",
+    "switch_language": "Dili değiştir",
+    "toggle_menu": "Menüyü aç veya kapat",
+    "primary_label": "Ana menü",
+    "menu": "Menü",
+    "close": "Kapat",
+    "menu_status": "Açık dizin",
+    "online": "Çevrimiçi"
   },
   "hero": {
+    "eyebrow": "Doğal ortamında bir internet karakteri",
     "line1": "TUMBLER",
     "line2": "PIGEON",
-    "tagline": "Oyun Geliştirme. İçerik. Kaos.",
-    "sub": "Dünyalar inşa ediyoruz, gürültü yaratıyoruz ve hepsini belgeliyoruz.",
-    "cta_blog": "Blog'u Oku",
-    "cta_discord": "Discord'a Katıl"
+    "artwork_alt": "Güvercinler ve kedilerle çevrili, maskeli TumblerPigeon karakterinin illüstrasyonu",
+    "intro": "İnternetin bilinmeyen bir köşesinden maskeli gözlemler, görsel sapmalar ve hafif kontrolsüz yayınlar.",
+    "primary_cta": "TikTok'ta İzle",
+    "secondary_cta": "Instagram'a Bak",
+    "footer_left": "Yeni görüntüler habersiz gelir",
+    "footer_right": "İncelemek için kaydır",
+    "meta": {
+      "subject_label": "Konu",
+      "subject": "Tumbler Pigeon",
+      "identity_label": "Kimlik",
+      "identity": "Bilinmiyor",
+      "status_label": "Durum",
+      "status": "Çevrimiçi",
+      "location_label": "Konum",
+      "location": "Açıklanmadı"
+    }
+  },
+  "featured": {
+    "label": "Öne çıkan görüntüler",
+    "title": "AKIŞTAN GELENLER.",
+    "intro": "TumblerPigeon sinyalinin tekrar eden üç biçimi. Bugün temsili yayınlar; yarın gerçek gönderiler, videolar ve yeni görüntüler.",
+    "open_channel": "Kanalı aç",
+    "short_form": {
+      "platform": "TikTok / Kısa video",
+      "title": "ANLIK GÖRÜNTÜLER",
+      "body": "Akış için hazırlanan hızlı karakter anları, tuhaf gözlemler ve fikirler."
+    },
+    "visuals": {
+      "platform": "Instagram / Görsel",
+      "title": "MASKE ÇALIŞMALARI",
+      "body": "TumblerPigeon dünyasından kareler, kurgular, nesneler ve görsel parçalar."
+    },
+    "dispatches": {
+      "platform": "Patreon / Notlar",
+      "title": "SİNYALİN ARKASI",
+      "body": "İzi takip edenler için daha uzun notlar ve akış dışında kalan malzemeler."
+    }
   },
   "about": {
-    "title": "KİM BU?",
-    "body": "TumblerPigeon, indie sahnesinin kıyılarından faaliyet gösteren solo bir oyun geliştirici ve içerik üreticisi. Kısmen stüdyo, kısmen fanzin, kısmen ateşli rüya. Oyun yapıyoruz, oyun yapımı hakkında konuşuyoruz ve bazen bunu yaparken maske takıyoruz. Kaosa dahil olmak istiyorsan abone ol.",
-    "label_games": "Yapılan Oyunlar",
-    "label_posts": "Blog Yazıları",
-    "label_years": "Yıl Geçti",
-    "latest_posts_divider": "Son Yazılar",
-    "view_all": "Tüm Yazıları Gör"
+    "label": "Konu hakkında",
+    "title_line1": "YÜZ KADRAJIN",
+    "title_line2": "DIŞINDA KALIR.",
+    "body": "TumblerPigeon; tuhaf ayrıntıları, görsel şakaları, karakter anlarını ve hiçbir kategoriye usulca sığmayan ne varsa toplayan maskeli bir internet personasıdır.",
+    "note_label": "Saha notu",
+    "note": "Karakter tutarlı. Format değil.",
+    "details": {
+      "face": {
+        "label": "Yüz",
+        "value": "Gizli"
+      },
+      "frequency": {
+        "label": "Sıklık",
+        "value": "Düzensiz"
+      },
+      "format": {
+        "label": "Format",
+        "value": "Sabit değil"
+      }
+    }
   },
-  "home": {
-    "find_online": "TumblerPigeon'ı burada bulun"
+  "pigeonarc": {
+    "label": "Yuvanın başka bir köşesi",
+    "body": "Oyunlar ve yazılımlar, kendine ait sinyali ve amacı olan bağlantılı anonim marka PigeonArc'ta yaşar.",
+    "cta": "PigeonArc'a Gir"
+  },
+  "merch_home": {
+    "label": "Kanıt dolabı / Ürünler",
+    "title_line1": "GÖRÜNTÜYÜ",
+    "title_line2": "ÜZERİNDE TAŞI.",
+    "body": "TumblerPigeon nesneleri şekilleniyor: sınırlı parçalar, tuhaf detaylar ve karakteri öne çıkaran tasarımlar. Seri üretim yok. Acele yok.",
+    "cta": "Seriyi incele",
+    "edition": "Seri 00",
+    "sample_label": "Konsept örneği / nihai değil"
+  },
+  "social": {
+    "label": "Açık kanallar",
+    "status": "Sinyal aktif",
+    "title_line1": "GÖRÜNTÜLERİ",
+    "title_line2": "TAKİP ET.",
+    "body": "Akış hızlı ilerliyor. TumblerPigeon'ı hareket hâlinde yakalayabileceğin yerler bunlar."
   },
   "newsletter": {
-    "title": "DİSPATCH'İ AL",
-    "subtitle": "Oyunlar, geliştirme günlükleri ve daha fazlası hakkında düzensiz güncellemeler. Spam yok. Muhtemelen.",
+    "title": "GÜNCELLEMELERİ AL",
+    "subtitle": "İnternetin farklı köşelerinden ara sıra TumblerPigeon güncellemeleri.",
     "placeholder": "email@adresin.com",
     "button": "Abone Ol",
-    "disclaimer": "Spam yok. İstediğinde çık. Muhtemelen."
+    "disclaimer": "Spam yok. İstediğinde çıkabilirsin."
   },
   "blog": {
     "title": "BLOG",
@@ -56,35 +129,45 @@
   },
   "contact": {
     "title": "İLETİŞİME GEÇ",
-    "subtitle": "İş birliği, iş, basın veya sadece merhaba demek için.",
+    "subtitle": "İş birlikleri, iş, basın veya maskenin ardındaki personaya bir mesaj için.",
     "email_label": "E-posta",
     "form_name": "Ad",
     "form_email": "E-posta",
     "form_message": "Mesaj",
     "form_submit": "Gönder",
-    "form_placeholder_name": "Adın",
+    "form_placeholder_name": "Adın veya rumuzun",
     "form_placeholder_email": "email@adresin.com",
     "form_placeholder_message": "Aklında ne var?",
-    "social_title": "Beni Online Bul",
+    "social_title": "TumblerPigeon'ı İnternette Bul",
     "drop_message": "Mesaj Bırak",
     "direct_email": "Doğrudan E-posta",
-    "response_time": "Yanıt süresi: Genellikle 24–48 saat. Acil için Discord DM daha hızlı."
+    "response_time": "Yanıt süresi genellikle 24–48 saattir."
   },
   "merch": {
     "title": "MAĞAZA",
     "store_label": "Mağaza",
     "coming_soon": "YAKINDA",
-    "subtitle": "Bir şeyler pişiriliyor.",
-    "body": "Gece 3'e kadar shader debug eden insanlar için sokak kıyafetleri. TumblerPigeon ürünleri hazırlanıyor — sınırlı drop'lar, tuhaf tasarımlar, kaliteli ürünler. İlk öğrenenlerden olmak için listeye gir.",
+    "subtitle": "TumblerPigeon evreninden nesneler.",
+    "body": "Giyilebilir ve koleksiyonluk fikirler maskenin arkasında şekilleniyor. Sınırlı seriler, tuhaf detaylar ve TumblerPigeon dünyası için hazırlanmış tasarımlar bekleyin.",
     "notify_button": "Beni Haberdar Et",
     "notify_placeholder": "email@adresin.com",
     "on_list_title": "LİSTEDESİN.",
-    "on_list_body": "Bir şey çıktığında ilk sen duyacaksın.",
-    "fine_print": "Sınırlı sayıda. Seri üretim yok. Yeraltında kalır."
+    "on_list_body": "Yeni bir şey çıktığında ilk sen duyacaksın.",
+    "fine_print": "Sınırlı seriler. Seri üretim yok."
   },
   "footer": {
-    "tagline": "Oyun Geliştirme. İçerik. Kaos.",
+    "signal_label": "Mevcut yayının sonu",
+    "tagline": "Maskeli bir internet personası. Görüntüler, nesneler ve başıboş dolaşan başka sinyaller.",
+    "navigate": "Dizin",
+    "elsewhere": "Kanallar",
+    "related": "Bağlantılı sinyal",
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "merch": "Mağaza",
+    "contact": "İletişim",
+    "status": "Durum",
+    "online": "Çevrimiçi",
     "rights": "Tüm hakları saklıdır.",
-    "made": "Geç saatler ve kötü kararlarla yapıldı."
+    "made": "Konum açıklanmadı."
   }
 }
