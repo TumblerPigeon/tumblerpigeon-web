@@ -41,7 +41,11 @@
     "body": "İlk TumblerPigeon ürünleri hazırlanıyor. Hazır olunca detaylar burada olacak.",
     "cta": "Ürünler sayfasına git",
     "edition": "Yakında",
-    "sample_label": "İlk taslak"
+    "sample_label": "İlk taslak",
+    "moodboard_label": "TumblerPigeon ürün ön izlemeleri",
+    "apparel_alt": "TumblerPigeon giyim ürünleri ön izlemesi",
+    "sticker_alt": "TumblerPigeon çıkartma paketi ön izlemesi",
+    "extras_alt": "TumblerPigeon aksesuar ön izlemesi"
   },
   "social": {
     "label": "Diğer kanallar",

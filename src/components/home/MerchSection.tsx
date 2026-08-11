@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 
@@ -21,14 +22,42 @@ export default function MerchSection() {
           </Link>
         </div>
 
-        <div className="relative min-h-[23rem] border border-bg/20 sm:min-h-[30rem] lg:col-span-5 lg:col-start-8" aria-hidden="true">
-          <div className="absolute inset-x-[14%] bottom-0 top-[8%] rotate-[-3deg] border-2 border-bg bg-bg shadow-[18px_18px_0_rgb(var(--color-accent))]">
-            <div className="absolute inset-x-0 top-[12%] border-y border-cream/20 py-4 text-center font-display text-5xl tracking-[0.08em] text-cream sm:text-7xl">TP</div>
-            <div className="absolute bottom-[10%] left-1/2 flex h-28 w-28 -translate-x-1/2 items-center justify-center rounded-full border border-brand-accent text-sm font-semibold text-brand-accent sm:h-36 sm:w-36">
-              {t('edition')}
-            </div>
+        <div className="pointer-events-none relative grid grid-cols-2 items-start gap-3 sm:min-h-[38rem] lg:col-span-5 lg:col-start-8 lg:min-h-[40rem]" aria-label={t('moodboard_label')}>
+          <div className="relative z-10 col-span-2 w-[72%] rotate-[-2deg] justify-self-start bg-cream p-1 shadow-[0_18px_38px_rgb(12_11_10_/_0.22)] sm:w-[62%] lg:absolute lg:left-[1%] lg:top-[4%] lg:w-[64%] lg:rotate-[-3deg]">
+            <Image
+              src="/images/apparel.png"
+              alt={t('apparel_alt')}
+              width={1122}
+              height={1402}
+              draggable={false}
+              sizes="(min-width: 1024px) 27vw, (min-width: 640px) 38vw, 72vw"
+              className="block h-auto w-full object-contain"
+            />
           </div>
-          <p className="absolute bottom-4 left-4 text-sm text-bg/60">{t('sample_label')}</p>
+
+          <div className="relative z-0 col-start-2 row-start-1 mt-16 w-[88%] rotate-[2deg] justify-self-end bg-cream p-1 shadow-[0_14px_32px_rgb(12_11_10_/_0.18)] sm:mt-20 sm:w-[78%] lg:absolute lg:right-0 lg:top-[10%] lg:mt-0 lg:w-[52%] lg:rotate-[3deg]">
+            <Image
+              src="/images/sticker.png"
+              alt={t('sticker_alt')}
+              width={1122}
+              height={1402}
+              draggable={false}
+              sizes="(min-width: 1024px) 22vw, (min-width: 640px) 24vw, 44vw"
+              className="block h-auto w-full object-contain"
+            />
+          </div>
+
+          <div className="relative z-20 col-span-2 -mt-20 w-[60%] rotate-[-1deg] justify-self-end bg-cream p-1 shadow-[0_18px_38px_rgb(12_11_10_/_0.22)] sm:-mt-40 sm:w-[54%] lg:absolute lg:bottom-[1%] lg:right-[7%] lg:mt-0 lg:w-[54%] lg:rotate-[-2deg]">
+            <Image
+              src="/images/extras.png"
+              alt={t('extras_alt')}
+              width={1122}
+              height={1402}
+              draggable={false}
+              sizes="(min-width: 1024px) 23vw, (min-width: 640px) 33vw, 60vw"
+              className="block h-auto w-full object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
