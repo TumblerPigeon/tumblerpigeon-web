@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { SITE_LINKS } from '@/lib/site-links';
 
@@ -7,11 +8,15 @@ export default function PigeonArcSection() {
   return (
     <section className="border-b editorial-rule px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
-        <div className="flex min-h-56 items-center justify-center border border-cream/15 bg-bg-card px-8 py-12 text-center lg:col-span-5 lg:min-h-72">
-          <div>
-            <span className="font-display text-6xl tracking-[0.08em] text-cream sm:text-7xl">PIGEONARC</span>
-            <p className="mt-4 text-sm text-cream-dim">{t('logo_placeholder')}</p>
-          </div>
+        <div className="flex min-h-48 items-center justify-center px-4 py-8 sm:min-h-56 sm:px-8 sm:py-10 lg:col-span-5 lg:min-h-72 lg:px-6">
+          <Image
+            src="/images/PA_Logo_Horizontal.png"
+            alt=""
+            width={428}
+            height={142}
+            sizes="(min-width: 1024px) 34vw, (min-width: 640px) 70vw, 92vw"
+            className="h-auto w-full max-w-md object-contain"
+          />
         </div>
 
         <div className="lg:col-span-6 lg:col-start-7">

@@ -17,13 +17,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'TumblerPigeon | Creator. Persona. Internet.',
-    template: '%s | TumblerPigeon',
-  },
+  title: 'Tumbler Pigeon',
   description:
     'TumblerPigeon is an anonymous masked creator identity sharing original content, visual experiments, and internet culture.',
   keywords: ['content creator', 'social media creator', 'internet culture', 'TumblerPigeon'],
+  icons: { icon: '/images/logo.png' },
   openGraph: { siteName: 'TumblerPigeon', type: 'website' },
   twitter: { card: 'summary_large_image', creator: '@tumblerpigeon_' },
 };
