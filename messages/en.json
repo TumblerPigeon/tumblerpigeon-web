@@ -13,19 +13,19 @@
     "close": "Close"
   },
   "hero": {
-    "eyebrow": "A masked character on the internet",
+    "eyebrow": "A masked pigeon on the internet",
     "line1": "TUMBLER",
     "line2": "PIGEON",
-    "intro": "Short videos, odd ideas, and whatever the mask gets into next.",
+    "intro": "Short videos, odd ideas, and whatever the pigeon gets into next.",
     "primary_cta": "Watch on TikTok",
     "secondary_cta": "See Instagram"
   },
   "about": {
     "label": "About",
-    "title_line1": "I MAKE THINGS",
-    "title_line2": "WITH THE MASK ON.",
-    "body": "I make short videos, strange images, and whatever else feels worth making.",
-    "aside": "No fixed format. Just the character and the next idea."
+    "title_line1": "I MAKE THINGS.",
+    "title_line2": "THAT'S ABOUT IT.",
+    "body": "Mostly videos. The rest depends on the idea.",
+    "aside": "No fixed format. Just the pigeon and the next idea."
   },
   "pigeonarc": {
     "label": "PigeonArc",
@@ -104,10 +104,10 @@
     "fine_print": "This page will be updated when there is something real to share."
   },
   "footer": {
-    "tagline": "The public home of TumblerPigeon, a masked character on the internet.",
-    "navigate": "Pages",
+    "tagline": "The public home of TumblerPigeon.",
+    "navigate": "Footer navigation",
     "elsewhere": "Social",
-    "related": "More",
+    "related": "Others",
     "home": "Home",
     "about": "About",
     "merch": "Merch",

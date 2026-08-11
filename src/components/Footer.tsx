@@ -17,33 +17,42 @@ export default function Footer() {
   return (
     <footer className="bg-bg px-4 pb-7 pt-12 sm:px-6 lg:px-8 lg:pt-14">
       <div className="mx-auto max-w-[88rem]">
-        <div className="grid gap-10 border-b editorial-rule pb-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">
+        <div className="grid gap-x-8 gap-y-10 border-b editorial-rule pb-10 sm:grid-cols-2 lg:grid-cols-12">
+          <div className="sm:col-span-2 lg:col-span-4">
             <Link href="/" className="font-display text-4xl tracking-[0.08em] text-cream transition-colors hover:text-brand-accent">
               TUMBLER PIGEON
             </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-cream-muted">{t('tagline')}</p>
           </div>
 
-          <nav className="flex flex-wrap gap-x-6 gap-y-3 lg:col-span-4" aria-label={t('navigate')}>
+          <nav className="flex flex-col items-start gap-3 lg:col-span-2" aria-label={t('navigate')}>
             {navigationLinks.map((link) => (
               <Link key={link.href} href={link.href} className="text-sm font-semibold text-cream-muted transition-colors hover:text-brand-accent">
                 {link.label}
               </Link>
             ))}
-            {CREATOR_SOCIALS.map((link) => (
-              <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-cream-muted transition-colors hover:text-brand-accent">
-                {link.label}
-              </a>
-            ))}
-            <a href={SITE_LINKS.pigeonarc} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-cream-muted transition-colors hover:text-brand-accent">
-              PigeonArc
-            </a>
           </nav>
 
-          <div className="lg:col-span-3 lg:col-start-10">
-            <p className="text-sm font-semibold text-cream">{t('contact')}</p>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 inline-block min-h-11 py-2 text-sm text-cream-muted underline decoration-brand-accent underline-offset-4 transition-colors hover:text-cream">
+          <div className="lg:col-span-2">
+            <p className="text-sm font-semibold text-cream">{t('elsewhere')}</p>
+            <div className="mt-3 flex flex-col items-start gap-3">
+              {CREATOR_SOCIALS.map((link) => (
+                <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-cream-muted transition-colors hover:text-brand-accent">
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:col-span-2">
+            <p className="text-sm font-semibold text-cream">{t('related')}</p>
+            <a href={SITE_LINKS.pigeonarc} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-semibold text-cream-muted transition-colors hover:text-brand-accent">
+              PigeonArc
+            </a>
+          </div>
+
+          <div className="lg:col-span-2">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="inline-flex min-h-11 items-start py-0.5 text-sm text-cream-muted underline decoration-brand-accent underline-offset-4 transition-colors hover:text-cream">
               {CONTACT_EMAIL}
             </a>
           </div>

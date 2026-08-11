@@ -13,19 +13,19 @@
     "close": "Kapat"
   },
   "hero": {
-    "eyebrow": "İnternette maskeli bir karakter",
+    "eyebrow": "İnternette maskeli bir güvercin",
     "line1": "TUMBLER",
     "line2": "PIGEON",
-    "intro": "Kısa videolar, tuhaf fikirler ve maskenin sıradaki işi.",
+    "intro": "Kısa videolar, tuhaf fikirler ve güvercinin sıradaki işi.",
     "primary_cta": "TikTok'ta İzle",
     "secondary_cta": "Instagram'a Bak"
   },
   "about": {
     "label": "Hakkında",
-    "title_line1": "MASKEYLE",
-    "title_line2": "ÜRETİYORUM.",
-    "body": "Kısa videolar, tuhaf görseller ve üretmeye değer gelen başka ne varsa yapıyorum.",
-    "aside": "Sabit bir format yok. Karakter ve sıradaki fikir var."
+    "title_line1": "BİR ŞEYLER YAPIYORUM.",
+    "title_line2": "HEPSİ BU.",
+    "body": "Çoğunlukla videolar. Gerisi fikre bağlı.",
+    "aside": "Sabit bir format yok. Sadece güvercin ve sıradaki fikir."
   },
   "pigeonarc": {
     "label": "PigeonArc",
@@ -104,10 +104,10 @@
     "fine_print": "Paylaşacak gerçek bir gelişme olduğunda bu sayfa güncellenecek."
   },
   "footer": {
-    "tagline": "Maskeli internet karakteri TumblerPigeon'ın resmi adresi.",
-    "navigate": "Sayfalar",
-    "elsewhere": "Sosyal medya",
-    "related": "Diğer",
+    "tagline": "TumblerPigeon'ın internetteki adresi.",
+    "navigate": "Alt menü",
+    "elsewhere": "Sosyal",
+    "related": "Diğerleri",
     "home": "Ana Sayfa",
     "about": "Hakkında",
     "merch": "Mağaza",
