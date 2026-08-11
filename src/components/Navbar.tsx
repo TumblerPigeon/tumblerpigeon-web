@@ -77,6 +77,7 @@ export default function Navbar() {
           href="/"
           locale={locale}
           onClick={() => setMenuOpen(false)}
+          aria-label={t('home')}
           className="group flex items-center gap-3 text-cream"
         >
           <Image
@@ -88,7 +89,6 @@ export default function Navbar() {
             sizes="40px"
             className="h-9 w-9 shrink-0 object-contain transition-transform group-hover:rotate-3 sm:h-10 sm:w-10"
           />
-          <span className="font-display text-xl tracking-[0.12em] sm:text-2xl">TUMBLER PIGEON</span>
         </Link>
 
         <div className="hidden items-center lg:flex">
