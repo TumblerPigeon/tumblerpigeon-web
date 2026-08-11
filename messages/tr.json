@@ -2,7 +2,7 @@
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkında",
-    "merch": "Mağaza",
+    "merch": "Ürünler",
     "pigeonarc": "PigeonArc",
     "tiktok": "TikTok",
     "instagram": "Instagram",
@@ -16,9 +16,9 @@
     "eyebrow": "İnternette maskeli bir güvercin",
     "line1": "TUMBLER",
     "line2": "PIGEON",
-    "intro": "Kısa videolar, tuhaf fikirler ve güvercinin sıradaki işi.",
-    "primary_cta": "TikTok'ta İzle",
-    "secondary_cta": "Instagram'a Bak"
+    "intro": "Kısa videolar, tuhaf fikirler ve güvercinin sırada neye bulaşacağı.",
+    "primary_cta": "TikTok'ta izle",
+    "secondary_cta": "Instagram'a bak"
   },
   "about": {
     "label": "Hakkında",
@@ -30,25 +30,25 @@
   "pigeonarc": {
     "label": "PigeonArc",
     "title": "OYUNLAR VE YAZILIM.",
-    "body": "Oyunlar ve yazılım için PigeonArc'a göz at.",
+    "body": "Oyunlar ve yazılım için PigeonArc'a git.",
     "logo_placeholder": "Logo alanı",
-    "cta": "PigeonArc'ı Ziyaret Et"
+    "cta": "PigeonArc'a git"
   },
   "merch_home": {
     "label": "Ürünler / Yakında",
-    "title_line1": "İLK SERİ",
+    "title_line1": "İLK KOLEKSİYON",
     "title_line2": "YAKINDA.",
-    "body": "İlk TumblerPigeon ürünleri üzerinde çalışıyoruz. Hazır olduğunda ayrıntıları paylaşacağız.",
-    "cta": "Mağaza sayfasına git",
+    "body": "İlk TumblerPigeon ürünleri hazırlanıyor. Hazır olunca detaylar burada olacak.",
+    "cta": "Ürünler sayfasına git",
     "edition": "Yakında",
-    "sample_label": "İlk görsel taslak"
+    "sample_label": "İlk taslak"
   },
   "social": {
     "label": "Diğer kanallar",
     "handle": "@tumblerpigeon_",
     "title_line1": "İNTERNETTE",
-    "title_line2": "TAKİP ET.",
-    "body": "Yeni paylaşımlar bu platformlarda yayınlanıyor."
+    "title_line2": "TAKİPTE KAL.",
+    "body": "Yeni paylaşımlar burada."
   },
   "newsletter": {
     "title": "GÜNCELLEMELERİ AL",
@@ -95,22 +95,22 @@
     "response_time": "Yanıt süresi genellikle 24–48 saattir."
   },
   "merch": {
-    "title": "MAĞAZA",
+    "title": "ÜRÜNLER",
     "coming_soon": "YAKINDA",
-    "subtitle": "İlk TumblerPigeon serisi hazırlanıyor.",
-    "body": "Henüz sipariş verilebilecek bir ürün yok. İlk parçalar hazır olduğunda ayrıntılar burada paylaşılacak.",
-    "contact_intro": "Ürünlerle ilgili sorular veya erken ilgi için:",
-    "back_home": "Ana Sayfaya Dön",
-    "fine_print": "Paylaşacak gerçek bir gelişme olduğunda bu sayfa güncellenecek."
+    "subtitle": "İlk TumblerPigeon ürünleri hazırlanıyor.",
+    "body": "Henüz sipariş verebileceğin bir şey yok. İlk ürünler hazır olunca detaylar burada olacak.",
+    "contact_intro": "Ürünlerle ilgili sorular için:",
+    "back_home": "Ana sayfaya dön",
+    "fine_print": "Yeni bir şey olduğunda bu sayfa güncellenecek."
   },
   "footer": {
     "tagline": "TumblerPigeon'ın internetteki adresi.",
-    "navigate": "Alt menü",
-    "elsewhere": "Sosyal",
-    "related": "Diğerleri",
+    "navigate": "Site bağlantıları",
+    "elsewhere": "Sosyal bağlantılar",
+    "related": "Diğer markalar",
     "home": "Ana Sayfa",
     "about": "Hakkında",
-    "merch": "Mağaza",
+    "merch": "Ürünler",
     "contact": "İletişim",
     "rights": "Tüm hakları saklıdır.",
     "made": "İnternet için yapıldı."

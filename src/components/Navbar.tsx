@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname as useRawPathname } from 'next/navigation';
 import { Link, useRouter } from '@/navigation';
@@ -27,6 +28,7 @@ export default function Navbar() {
   const locale = useLocale();
   const router = useRouter();
   const rawPathname = useRawPathname();
+  const activeLocale = locale === 'tr' ? 'TR' : 'EN';
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -73,12 +75,19 @@ export default function Navbar() {
       <nav className="mx-auto flex h-16 max-w-[92rem] items-center justify-between px-4 sm:px-6 lg:px-8" aria-label={t('primary_label')}>
         <Link
           href="/"
+          locale={locale}
           onClick={() => setMenuOpen(false)}
           className="group flex items-center gap-3 text-cream"
         >
-          <span className="flex h-7 w-7 items-center justify-center bg-brand-accent font-display text-xl leading-none text-bg transition-transform group-hover:rotate-3">
-            TP
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt=""
+            width={40}
+            height={40}
+            priority
+            sizes="40px"
+            className="h-9 w-9 shrink-0 object-contain transition-transform group-hover:rotate-3 sm:h-10 sm:w-10"
+          />
           <span className="font-display text-xl tracking-[0.12em] sm:text-2xl">TUMBLER PIGEON</span>
         </Link>
 
@@ -127,7 +136,7 @@ export default function Navbar() {
               aria-label={t('switch_language')}
               className="ml-2 min-h-10 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
             >
-              {locale === 'en' ? 'TR' : 'EN'}
+              {activeLocale}
             </button>
           </div>
         </div>
@@ -138,7 +147,7 @@ export default function Navbar() {
             aria-label={t('switch_language')}
             className="min-h-11 min-w-11 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream"
           >
-            {locale === 'en' ? 'TR' : 'EN'}
+            {activeLocale}
           </button>
           <button
             onClick={() => setMenuOpen((open) => !open)}
