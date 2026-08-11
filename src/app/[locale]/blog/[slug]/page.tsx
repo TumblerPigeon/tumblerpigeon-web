@@ -56,7 +56,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Back link */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-xs font-mono text-cream-dim hover:text-cream-muted transition-colors mb-10 uppercase tracking-wider"
+          className="inline-flex items-center gap-2 text-xs font-body text-cream-dim hover:text-cream-muted transition-colors mb-10"
         >
           {t('back')}
         </Link>
@@ -66,7 +66,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Meta tags */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <span
-              className={`text-xs font-mono px-2 py-1 rounded-full border ${
+              className={`text-xs font-body px-2 py-1 rounded-full border ${
                 post.category === 'game-dev'
                   ? 'border-brand-blue/30 text-brand-blue bg-brand-blue/5'
                   : post.category === 'income-business'
@@ -79,15 +79,15 @@ export default async function BlogPostPage({ params }: Props) {
               {tBlog(`categories.${post.category}` as Parameters<typeof tBlog>[0])}
             </span>
 
-            <span className="text-xs font-mono text-cream-dim">
+            <span className="text-xs font-body text-cream-dim">
               {post.language === 'en' ? '🇬🇧 English' : '🇹🇷 Türkçe'}
             </span>
 
-            <span className="text-xs font-mono text-cream-dim">
+            <span className="text-xs font-body text-cream-dim">
               {formatDate(post.date, params.locale)}
             </span>
 
-            <span className="text-xs font-mono text-cream-dim">
+            <span className="text-xs font-body text-cream-dim">
               {post.readingTime} {tBlog('min_read')}
             </span>
           </div>
@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-mono text-cream-dim border border-white/5 px-2 py-1 rounded"
+                className="text-xs font-body text-cream-dim border border-white/5 px-2 py-1 rounded"
               >
                 #{tag}
               </span>

@@ -37,9 +37,6 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
     <div className="min-h-screen pt-28 pb-20">
       {/* Header */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="text-xs font-mono text-brand-blue uppercase tracking-widest mb-4">
-          // THE BLOG
-        </div>
         <h1 className="font-display text-6xl md:text-8xl text-cream tracking-widest leading-none mb-4">
           {t('title')}
         </h1>
@@ -55,7 +52,7 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-3 py-1.5 text-xs font-mono rounded-full border transition-all uppercase tracking-wider ${
+                className={`px-3 py-1.5 text-xs font-body rounded-full border transition-all ${
                   activeCategory === cat.id
                     ? 'bg-brand-blue border-brand-blue text-cream'
                     : 'border-white/10 text-cream-dim hover:border-white/20 hover:text-cream-muted'
@@ -74,7 +71,7 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
                 <button
                   key={lang}
                   onClick={() => setActiveLang(lang)}
-                  className={`px-3 py-1 text-xs font-mono rounded-full transition-all ${
+                  className={`px-3 py-1 text-xs font-body rounded-full transition-all ${
                     activeLang === lang
                       ? 'bg-white/10 text-cream'
                       : 'text-cream-dim hover:text-cream-muted'
@@ -119,7 +116,7 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
             <div className="font-display text-5xl text-cream-dim mb-3 tracking-widest">
               {t('nothing_label')}
             </div>
-            <p className="text-cream-dim font-mono text-sm">{t('no_posts')}</p>
+            <p className="text-cream-dim font-body text-sm">{t('no_posts')}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -78,15 +78,6 @@ body > * {
   line-height: 0.82;
 }
 
-.editorial-label {
-  font-family: var(--font-space-grotesk), system-ui, sans-serif;
-  font-size: 0.71875rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-}
-
 .editorial-rule {
   border-color: rgb(var(--color-ink) / 0.12);
 }

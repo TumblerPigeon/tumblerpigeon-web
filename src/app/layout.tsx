@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Bebas_Neue, Space_Grotesk, Space_Mono } from 'next/font/google';
+import { Bebas_Neue, Space_Grotesk } from 'next/font/google';
 import { headers } from 'next/headers';
 import './globals.css';
 
@@ -16,13 +16,6 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-const spaceMono = Space_Mono({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  variable: '--font-space-mono',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
   title: {
     default: 'TumblerPigeon | Creator. Persona. Internet.',
@@ -32,7 +25,7 @@ export const metadata: Metadata = {
     'TumblerPigeon is an anonymous masked creator identity sharing original content, visual experiments, and internet culture.',
   keywords: ['content creator', 'social media creator', 'internet culture', 'TumblerPigeon'],
   openGraph: { siteName: 'TumblerPigeon', type: 'website' },
-  twitter: { card: 'summary_large_image', creator: '@tumblerpigeon' },
+  twitter: { card: 'summary_large_image', creator: '@tumblerpigeon_' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -44,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${bebasNeue.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`}
+      className={`${bebasNeue.variable} ${spaceGrotesk.variable}`}
     >
       <body className="font-body bg-bg text-cream-muted min-h-screen flex flex-col">
         {children}

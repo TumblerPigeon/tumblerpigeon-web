@@ -10,9 +10,7 @@
     "toggle_menu": "Menüyü aç veya kapat",
     "primary_label": "Ana menü",
     "menu": "Menü",
-    "close": "Kapat",
-    "menu_status": "Açık dizin",
-    "online": "Çevrimiçi"
+    "close": "Kapat"
   },
   "hero": {
     "eyebrow": "İnternette maskeli bir karakter",
@@ -21,28 +19,20 @@
     "artwork_alt": "Güvercinler ve kedilerle çevrili, maskeli TumblerPigeon karakterinin illüstrasyonu",
     "intro": "Kısa videolar, tuhaf fikirler ve maskenin sıradaki işi.",
     "primary_cta": "TikTok'ta İzle",
-    "secondary_cta": "Instagram'a Bak",
-    "footer_left": "Yeni paylaşımlar belli bir takvime bağlı değil",
-    "footer_right": "Devamı aşağıda",
-    "meta": {
-      "persona_label": "Persona",
-      "persona": "Tumbler Pigeon",
-      "identity_label": "Kimlik",
-      "identity": "Bilinmiyor",
-      "online": "Çevrimiçi"
-    }
+    "secondary_cta": "Instagram'a Bak"
   },
   "about": {
     "label": "Hakkında",
-    "title_line1": "YÜZ KADRAJIN",
-    "title_line2": "DIŞINDA KALIR.",
-    "body": "TumblerPigeon, videolar ve görseller üreten; kendini tek bir kategoriyle sınırlamayan maskeli bir internet karakteridir.",
-    "aside_label": "Kısaca",
-    "aside": "Sabit bir format yok. Karakter ve üretmeye değer gelen fikirler var."
+    "title_line1": "MASKEYLE",
+    "title_line2": "ÜRETİYORUM.",
+    "body": "Kısa videolar, tuhaf görseller ve üretmeye değer gelen başka ne varsa yapıyorum.",
+    "aside": "Sabit bir format yok. Karakter ve sıradaki fikir var."
   },
   "pigeonarc": {
-    "label": "Oyunlar ve yazılım",
-    "body": "Oyunların ve yazılımların ayrı adresi PigeonArc.",
+    "label": "PigeonArc",
+    "title": "OYUNLAR VE YAZILIM.",
+    "body": "Oyunlar ve yazılım için PigeonArc'a göz at.",
+    "logo_placeholder": "Logo alanı",
     "cta": "PigeonArc'ı Ziyaret Et"
   },
   "merch_home": {
@@ -107,15 +97,12 @@
   },
   "merch": {
     "title": "MAĞAZA",
-    "store_label": "Mağaza",
     "coming_soon": "YAKINDA",
-    "subtitle": "TumblerPigeon evreninden nesneler.",
-    "body": "Giyilebilir ve koleksiyonluk fikirler maskenin arkasında şekilleniyor. Sınırlı seriler, tuhaf detaylar ve TumblerPigeon dünyası için hazırlanmış tasarımlar bekleyin.",
-    "notify_button": "Beni Haberdar Et",
-    "notify_placeholder": "email@adresin.com",
-    "on_list_title": "LİSTEDESİN.",
-    "on_list_body": "Yeni bir şey çıktığında ilk sen duyacaksın.",
-    "fine_print": "Sınırlı seriler. Seri üretim yok."
+    "subtitle": "İlk TumblerPigeon serisi hazırlanıyor.",
+    "body": "Henüz sipariş verilebilecek bir ürün yok. İlk parçalar hazır olduğunda ayrıntılar burada paylaşılacak.",
+    "contact_intro": "Ürünlerle ilgili sorular veya erken ilgi için:",
+    "back_home": "Ana Sayfaya Dön",
+    "fine_print": "Paylaşacak gerçek bir gelişme olduğunda bu sayfa güncellenecek."
   },
   "footer": {
     "tagline": "Maskeli internet karakteri TumblerPigeon'ın resmi adresi.",

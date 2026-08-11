@@ -6,58 +6,42 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="hero-wash relative min-h-svh overflow-hidden border-b editorial-rule px-4 pb-14 pt-24 sm:px-6 lg:px-8 lg:pb-8 lg:pt-28">
-      <div className="mx-auto flex min-h-[calc(100svh-7rem)] max-w-[92rem] flex-col">
-        <div className="editorial-label motion-reveal grid grid-cols-2 gap-x-6 gap-y-2 border-y editorial-rule py-3 text-cream-dim sm:grid-cols-3">
-          <p><span className="text-cream">{t('meta.persona_label')}:</span> {t('meta.persona')}</p>
-          <p><span className="text-cream">{t('meta.identity_label')}:</span> {t('meta.identity')}</p>
-          <p className="col-span-2 sm:col-span-1 sm:text-right"><span className="text-brand-accent">{t('meta.online')}</span></p>
-        </div>
-
-        <div className="relative flex flex-1 flex-col justify-center py-10 lg:py-4">
-          <p className="editorial-label motion-reveal mb-4 text-brand-accent lg:absolute lg:left-[1%] lg:top-[18%]">
-            {t('eyebrow')}
-          </p>
-
-          <h1 className="motion-reveal relative z-10 font-display text-[clamp(5.3rem,26vw,9rem)] leading-[0.72] tracking-[0.025em] text-cream sm:text-[clamp(8rem,22vw,13rem)] lg:text-[clamp(10rem,18vw,17rem)]">
+    <section className="hero-wash min-h-svh border-b editorial-rule px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
+      <div className="mx-auto grid min-h-[calc(100svh-12rem)] max-w-[88rem] items-center gap-8 lg:grid-cols-12 lg:gap-10">
+        <div className="motion-reveal lg:col-span-8">
+          <p className="mb-5 text-sm font-semibold text-brand-accent">{t('eyebrow')}</p>
+          <h1 className="font-display text-[clamp(5rem,24vw,9rem)] leading-[0.74] tracking-[0.025em] text-cream sm:text-[clamp(7rem,19vw,12rem)] lg:text-[clamp(9rem,14vw,14rem)]">
             <span className="block">{t('line1')}</span>
-            <span className="block text-right lg:pr-[4vw]">{t('line2')}</span>
+            <span className="block">{t('line2')}</span>
           </h1>
-
-          <div className="motion-image-in relative z-20 -mx-4 -mb-3 -mt-2 aspect-square sm:mx-auto sm:w-[29rem] lg:hidden">
-            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 640px) 96vw, 464px" className="object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,0.5)]" />
-          </div>
-
-          <div className="motion-image-in pointer-events-none absolute right-[2%] top-1/2 z-20 hidden aspect-square w-[min(37vw,34rem)] -translate-y-[44%] lg:block xl:right-[6%]">
-            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 1280px) 37vw, 544px" className="object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.58)]" />
-          </div>
-
-          <div className="relative z-30 mt-7 max-w-xl lg:ml-[7%] lg:mt-5">
-            <p className="text-lg leading-relaxed text-cream-muted sm:text-xl lg:max-w-md">{t('intro')}</p>
-            <div className="mt-7 grid grid-cols-1 gap-3 sm:flex">
-              <a
-                href={SITE_LINKS.tiktok}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-h-12 inline-flex items-center justify-between gap-8 bg-brand-accent px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-bg transition-colors hover:bg-brand-accent-bright"
-              >
-                {t('primary_cta')} <span aria-hidden="true">↗</span>
-              </a>
-              <a
-                href={SITE_LINKS.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-h-12 inline-flex items-center justify-between gap-8 border border-cream/20 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-cream transition-colors hover:border-cream/50 hover:bg-cream/5"
-              >
-                {t('secondary_cta')} <span aria-hidden="true">↗</span>
-              </a>
-            </div>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-cream-muted sm:text-xl">{t('intro')}</p>
+          <div className="mt-8 grid gap-3 sm:flex">
+            <a
+              href={SITE_LINKS.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-between gap-8 bg-brand-accent px-6 py-3 text-sm font-bold text-bg transition-colors hover:bg-brand-accent-bright"
+            >
+              {t('primary_cta')} <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href={SITE_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-between gap-8 border border-cream/25 px-6 py-3 text-sm font-bold text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
+            >
+              {t('secondary_cta')} <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
 
-        <div className="editorial-label hidden items-center justify-between border-t editorial-rule pt-3 text-cream-dim lg:flex">
-          <span>{t('footer_left')}</span>
-          <span>{t('footer_right')}</span>
+        <div className="motion-image-in mx-auto aspect-square w-full max-w-[17rem] sm:max-w-[21rem] lg:col-span-4 lg:max-w-[26rem]">
+          <LogoImage
+            alt={t('artwork_alt')}
+            priority
+            sizes="(max-width: 640px) 272px, (max-width: 1024px) 336px, 416px"
+            className="object-contain drop-shadow-[0_24px_45px_rgba(0,0,0,0.5)]"
+          />
         </div>
       </div>
     </section>

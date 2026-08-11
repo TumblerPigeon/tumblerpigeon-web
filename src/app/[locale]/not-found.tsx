@@ -3,9 +3,7 @@ import { Link } from '@/navigation';
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-      <div className="text-xs font-mono text-brand-red uppercase tracking-widest mb-6">
-        // 404
-      </div>
+      <div className="mb-6 text-sm font-semibold text-brand-accent">404</div>
       <h1 className="font-display text-[clamp(6rem,20vw,14rem)] text-cream tracking-widest leading-none mb-4">
         LOST.
       </h1>
@@ -14,7 +12,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="px-8 py-3 bg-brand-blue text-cream font-mono font-bold text-sm rounded-lg hover:bg-brand-blue-bright active:scale-95 transition-all tracking-widest uppercase"
+        className="px-8 py-3 bg-brand-blue text-cream font-body font-bold text-sm rounded-lg hover:bg-brand-blue-bright active:scale-95 transition-all"
       >
         Go Home
       </Link>

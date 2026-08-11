@@ -32,7 +32,6 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-bebas)', ...fontFamily.sans],
         body: ['var(--font-space-grotesk)', ...fontFamily.sans],
-        mono: ['var(--font-space-mono)', ...fontFamily.mono],
       },
       animation: {
         reveal: 'reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both',

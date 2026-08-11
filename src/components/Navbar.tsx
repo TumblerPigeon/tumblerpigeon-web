@@ -88,7 +88,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="editorial-label min-h-11 px-3 py-3 text-cream-muted transition-colors hover:text-cream"
+                className="min-h-11 px-3 py-3 text-sm font-semibold text-cream-muted transition-colors hover:text-cream"
               >
                 {link.label}
               </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
               href={SITE_LINKS.pigeonarc}
               target="_blank"
               rel="noopener noreferrer"
-              className="editorial-label min-h-11 px-3 py-3 text-cream-muted transition-colors hover:text-cream"
+              className="min-h-11 px-3 py-3 text-sm font-semibold text-cream-muted transition-colors hover:text-cream"
             >
               {t('pigeonarc')} ↗
             </a>
@@ -125,7 +125,7 @@ export default function Navbar() {
             <button
               onClick={switchLocale}
               aria-label={t('switch_language')}
-              className="editorial-label ml-2 min-h-10 border border-cream/15 px-3 py-2 text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
+              className="ml-2 min-h-10 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
             >
               {locale === 'en' ? 'TR' : 'EN'}
             </button>
@@ -136,13 +136,13 @@ export default function Navbar() {
           <button
             onClick={switchLocale}
             aria-label={t('switch_language')}
-            className="editorial-label min-h-11 min-w-11 border border-cream/15 px-3 py-2 text-cream"
+            className="min-h-11 min-w-11 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream"
           >
             {locale === 'en' ? 'TR' : 'EN'}
           </button>
           <button
             onClick={() => setMenuOpen((open) => !open)}
-            className="editorial-label flex min-h-11 min-w-14 items-center justify-center border border-cream/15 px-3 text-cream"
+            className="flex min-h-11 min-w-14 items-center justify-center border border-cream/15 px-3 text-sm font-semibold text-cream"
             aria-label={t('toggle_menu')}
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation"
@@ -155,20 +155,14 @@ export default function Navbar() {
       {menuOpen && (
         <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-bg px-4 py-8 sm:px-6 lg:hidden">
           <div className="mx-auto flex min-h-full max-w-3xl flex-col">
-            <div className="editorial-label flex items-center justify-between border-b editorial-rule pb-3 text-cream-dim">
-              <span>{t('menu_status')}</span>
-              <span className="text-brand-accent">{t('online')}</span>
-            </div>
-
-            <div className="flex-1 py-6">
-              {navLinks.map((link, index) => (
+            <div className="flex-1 py-4">
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="group grid grid-cols-[2rem_1fr_auto] items-center border-b editorial-rule py-4 text-cream"
+                  className="group grid grid-cols-[1fr_auto] items-center border-b editorial-rule py-4 text-cream"
                 >
-                  <span className="editorial-label text-cream-dim">0{index + 1}</span>
                   <span className="font-display text-5xl tracking-[0.045em] sm:text-6xl">{link.label}</span>
                   <span className="text-brand-accent transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
                 </Link>
@@ -178,19 +172,18 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="group grid grid-cols-[2rem_1fr_auto] items-center border-b editorial-rule py-4 text-cream"
+                className="group grid grid-cols-[1fr_auto] items-center border-b editorial-rule py-4 text-cream"
               >
-                <span className="editorial-label text-cream-dim">04</span>
                 <span className="font-display text-5xl tracking-[0.045em] sm:text-6xl">{t('pigeonarc')}</span>
                 <span className="text-brand-accent transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
               </a>
             </div>
 
             <div className="grid grid-cols-2 gap-3 border-t editorial-rule pt-5">
-              <a href={SITE_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center font-mono text-xs uppercase tracking-wider text-cream">
+              <a href={SITE_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center text-sm font-semibold text-cream">
                 {t('tiktok')} ↗
               </a>
-              <a href={SITE_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center font-mono text-xs uppercase tracking-wider text-cream">
+              <a href={SITE_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="min-h-12 border border-cream/15 px-4 py-3 text-center text-sm font-semibold text-cream">
                 {t('instagram')} ↗
               </a>
             </div>

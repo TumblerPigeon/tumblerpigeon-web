@@ -39,7 +39,7 @@ export default function GiscusComments() {
     <section className="mt-16 pt-10 border-t border-white/5">
       <h2 className="font-display text-2xl tracking-widest text-cream mb-6">COMMENTS</h2>
       <div ref={containerRef} className="giscus" />
-      <p className="text-xs font-mono text-cream-dim mt-4 opacity-60">
+      <p className="text-xs font-body text-cream-dim mt-4 opacity-60">
         Comments powered by{' '}
         <a
           href="https://giscus.app"

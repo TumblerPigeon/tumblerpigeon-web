@@ -32,7 +32,7 @@ export default function NewsletterForm({ minimal = false }: { minimal?: boolean 
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-brand-blue text-cream text-sm font-mono font-bold rounded hover:bg-brand-blue-bright transition-colors whitespace-nowrap"
+          className="px-4 py-2 bg-brand-blue text-cream text-sm font-body font-bold rounded hover:bg-brand-blue-bright transition-colors whitespace-nowrap"
         >
           {t('button')}
         </button>
@@ -47,9 +47,7 @@ export default function NewsletterForm({ minimal = false }: { minimal?: boolean 
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-red/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-xl">
-        <div className="text-xs font-mono text-brand-blue uppercase tracking-widest mb-4">
-          // SUBSCRIBE
-        </div>
+        <div className="mb-4 text-sm font-semibold text-brand-accent">SUBSCRIBE</div>
         <h2 className="font-display text-5xl md:text-6xl tracking-widest text-cream mb-4">
           {t('title')}
         </h2>
@@ -58,7 +56,7 @@ export default function NewsletterForm({ minimal = false }: { minimal?: boolean 
         </p>
 
         {status === 'success' ? (
-          <div className="border border-brand-blue/30 bg-brand-blue/5 rounded-lg p-4 text-cream-muted font-mono text-sm">
+          <div className="border border-brand-blue/30 bg-brand-blue/5 rounded-lg p-4 text-cream-muted font-body text-sm">
             ✓ You&apos;re in. Stay weird.
           </div>
         ) : (
@@ -79,7 +77,7 @@ export default function NewsletterForm({ minimal = false }: { minimal?: boolean 
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-brand-blue text-cream font-mono font-bold text-sm rounded-lg hover:bg-brand-blue-bright active:scale-95 transition-all whitespace-nowrap"
+              className="px-6 py-3 bg-brand-blue text-cream font-body font-bold text-sm rounded-lg hover:bg-brand-blue-bright active:scale-95 transition-all whitespace-nowrap"
             >
               {t('button')}
             </button>
@@ -87,10 +85,10 @@ export default function NewsletterForm({ minimal = false }: { minimal?: boolean 
         )}
 
         {status === 'error' && (
-          <p className="text-brand-red text-xs font-mono mt-2">Enter a valid email.</p>
+          <p className="text-brand-red text-xs font-body mt-2">Enter a valid email.</p>
         )}
 
-        <p className="text-cream-dim text-xs font-mono mt-4 opacity-60">{t('disclaimer')}</p>
+        <p className="text-cream-dim text-xs font-body mt-4 opacity-60">{t('disclaimer')}</p>
       </div>
     </div>
   );

@@ -10,9 +10,7 @@
     "toggle_menu": "Toggle menu",
     "primary_label": "Primary navigation",
     "menu": "Menu",
-    "close": "Close",
-    "menu_status": "Public index",
-    "online": "Online"
+    "close": "Close"
   },
   "hero": {
     "eyebrow": "A masked character on the internet",
@@ -21,28 +19,20 @@
     "artwork_alt": "Illustrated TumblerPigeon masked character surrounded by pigeons and cats",
     "intro": "Short videos, odd ideas, and whatever the mask gets into next.",
     "primary_cta": "Watch on TikTok",
-    "secondary_cta": "See Instagram",
-    "footer_left": "New posts arrive without a schedule",
-    "footer_right": "More below",
-    "meta": {
-      "persona_label": "Persona",
-      "persona": "Tumbler Pigeon",
-      "identity_label": "Identity",
-      "identity": "Unknown",
-      "online": "Online"
-    }
+    "secondary_cta": "See Instagram"
   },
   "about": {
     "label": "About",
-    "title_line1": "THE FACE STAYS",
-    "title_line2": "OUT OF FRAME.",
-    "body": "TumblerPigeon is a masked internet character making videos, images, and things that do not fit neatly into one category.",
-    "aside_label": "In short",
-    "aside": "No fixed format. Just the character and whatever feels worth making."
+    "title_line1": "I MAKE THINGS",
+    "title_line2": "WITH THE MASK ON.",
+    "body": "I make short videos, strange images, and whatever else feels worth making.",
+    "aside": "No fixed format. Just the character and the next idea."
   },
   "pigeonarc": {
-    "label": "Games and software",
-    "body": "Games and software have their own home at PigeonArc.",
+    "label": "PigeonArc",
+    "title": "GAMES AND SOFTWARE.",
+    "body": "For games and software, head to PigeonArc.",
+    "logo_placeholder": "Logo placeholder",
     "cta": "Visit PigeonArc"
   },
   "merch_home": {
@@ -107,15 +97,12 @@
   },
   "merch": {
     "title": "MERCH",
-    "store_label": "Merch Store",
     "coming_soon": "COMING SOON",
-    "subtitle": "Objects from the TumblerPigeon universe.",
-    "body": "Wearable and collectible ideas are taking shape behind the mask. Expect limited releases, strange details, and designs made for the world of TumblerPigeon.",
-    "notify_button": "Notify Me",
-    "notify_placeholder": "your@email.com",
-    "on_list_title": "ON THE LIST.",
-    "on_list_body": "You'll hear it first when something drops.",
-    "fine_print": "Limited releases. No mass production."
+    "subtitle": "The first TumblerPigeon drop is in progress.",
+    "body": "There is nothing to order yet. Details will be posted here when the first pieces are ready.",
+    "contact_intro": "For merch questions or early interest:",
+    "back_home": "Back to Home",
+    "fine_print": "This page will be updated when there is something real to share."
   },
   "footer": {
     "tagline": "The public home of TumblerPigeon, a masked character on the internet.",

@@ -35,7 +35,7 @@ export default function BlogCard({ post }: { post: PostMeta }) {
         {/* Meta row */}
         <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
           <div className="flex items-center gap-2">
-            <span className={`text-xs font-mono px-2 py-0.5 rounded-full border ${
+            <span className={`text-xs font-body px-2 py-0.5 rounded-full border ${
               post.category === 'game-dev'
                 ? 'border-brand-blue/30 text-brand-blue bg-brand-blue/5'
                 : post.category === 'income-business'
@@ -46,11 +46,11 @@ export default function BlogCard({ post }: { post: PostMeta }) {
             }`}>
               {categoryLabel}
             </span>
-            <span className="text-xs font-mono text-cream-dim opacity-70">
+            <span className="text-xs font-body text-cream-dim opacity-70">
               {post.language === 'en' ? '🇬🇧' : '🇹🇷'}
             </span>
           </div>
-          <span className="text-xs font-mono text-cream-dim">
+          <span className="text-xs font-body text-cream-dim">
             {formatDate(post.date)}
           </span>
         </div>
@@ -67,12 +67,12 @@ export default function BlogCard({ post }: { post: PostMeta }) {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-auto">
-          <span className="text-xs font-mono text-cream-dim">
+          <span className="text-xs font-body text-cream-dim">
             {post.readingTime} {t('min_read')}
           </span>
           <Link
             href={`/blog/${post.slug}`}
-            className="text-sm font-mono text-brand-blue hover:text-brand-blue-bright transition-colors duration-200 group-hover:underline underline-offset-4"
+            className="text-sm font-body text-brand-blue hover:text-brand-blue-bright transition-colors duration-200 group-hover:underline underline-offset-4"
           >
             {t('read_more')} →
           </Link>
