@@ -8,11 +8,10 @@ export default function Hero() {
   return (
     <section className="hero-wash relative min-h-svh overflow-hidden border-b editorial-rule px-4 pb-14 pt-24 sm:px-6 lg:px-8 lg:pb-8 lg:pt-28">
       <div className="mx-auto flex min-h-[calc(100svh-7rem)] max-w-[92rem] flex-col">
-        <div className="editorial-label motion-reveal grid grid-cols-2 gap-x-6 gap-y-2 border-y editorial-rule py-3 text-cream-dim sm:grid-cols-4">
-          <p><span className="text-cream">{t('meta.subject_label')}:</span> {t('meta.subject')}</p>
+        <div className="editorial-label motion-reveal grid grid-cols-2 gap-x-6 gap-y-2 border-y editorial-rule py-3 text-cream-dim sm:grid-cols-3">
+          <p><span className="text-cream">{t('meta.persona_label')}:</span> {t('meta.persona')}</p>
           <p><span className="text-cream">{t('meta.identity_label')}:</span> {t('meta.identity')}</p>
-          <p><span className="text-cream">{t('meta.status_label')}:</span> <span className="text-brand-accent">{t('meta.status')}</span></p>
-          <p className="sm:text-right"><span className="text-cream">{t('meta.location_label')}:</span> {t('meta.location')}</p>
+          <p className="col-span-2 sm:col-span-1 sm:text-right"><span className="text-brand-accent">{t('meta.online')}</span></p>
         </div>
 
         <div className="relative flex flex-1 flex-col justify-center py-10 lg:py-4">
@@ -25,12 +24,12 @@ export default function Hero() {
             <span className="block text-right lg:pr-[4vw]">{t('line2')}</span>
           </h1>
 
-          <div className="motion-image-in relative z-20 -mx-10 -mb-5 -mt-4 aspect-square sm:-mx-2 sm:mx-auto sm:w-[36rem] lg:hidden">
-            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 640px) 110vw, 576px" className="object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,0.5)]" />
+          <div className="motion-image-in relative z-20 -mx-4 -mb-3 -mt-2 aspect-square sm:mx-auto sm:w-[29rem] lg:hidden">
+            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 640px) 96vw, 464px" className="object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,0.5)]" />
           </div>
 
-          <div className="motion-image-in pointer-events-none absolute right-[-5%] top-1/2 z-20 hidden aspect-square w-[min(46vw,43rem)] -translate-y-[47%] lg:block xl:right-[1%]">
-            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 1280px) 46vw, 688px" className="object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.58)]" />
+          <div className="motion-image-in pointer-events-none absolute right-[2%] top-1/2 z-20 hidden aspect-square w-[min(37vw,34rem)] -translate-y-[44%] lg:block xl:right-[6%]">
+            <LogoImage alt={t('artwork_alt')} priority sizes="(max-width: 1280px) 37vw, 544px" className="object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.58)]" />
           </div>
 
           <div className="relative z-30 mt-7 max-w-xl lg:ml-[7%] lg:mt-5">

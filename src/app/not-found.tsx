@@ -1,4 +1,4 @@
-// Renders inside src/app/layout.tsx — no <html>/<body> needed here.
+// Renders inside src/app/layout.tsx, so no <html>/<body> is needed here.
 export default function RootNotFound() {
   return (
     <div

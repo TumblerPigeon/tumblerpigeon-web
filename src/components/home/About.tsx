@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="about" className="scroll-mt-20 border-b editorial-rule px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
       <div className="mx-auto max-w-7xl">
-        <SectionLabel index="02">{t('label')}</SectionLabel>
+        <SectionLabel index="01">{t('label')}</SectionLabel>
         <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-8">
             <h2 className="font-display text-[clamp(4.6rem,11vw,9rem)] leading-[0.82] tracking-[0.035em] text-cream">
@@ -19,17 +19,9 @@ export default function About() {
 
           <aside className="lg:col-span-3 lg:col-start-10 lg:pt-8">
             <div className="border-l border-brand-accent pl-5">
-              <p className="editorial-label text-brand-accent">{t('note_label')}</p>
-              <p className="mt-4 font-mono text-sm leading-relaxed text-cream">{t('note')}</p>
+              <p className="editorial-label text-brand-accent">{t('aside_label')}</p>
+              <p className="mt-4 text-sm leading-relaxed text-cream">{t('aside')}</p>
             </div>
-            <dl className="mt-12 divide-y divide-cream/10 border-y editorial-rule">
-              {(['face', 'frequency', 'format'] as const).map((item) => (
-                <div key={item} className="grid grid-cols-2 gap-4 py-4">
-                  <dt className="editorial-label text-cream-dim">{t(`details.${item}.label`)}</dt>
-                  <dd className="editorial-label text-right text-cream">{t(`details.${item}.value`)}</dd>
-                </div>
-              ))}
-            </dl>
           </aside>
         </div>
       </div>

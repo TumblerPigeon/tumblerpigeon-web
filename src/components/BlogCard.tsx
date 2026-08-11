@@ -13,7 +13,7 @@ function formatDate(dateStr: string): string {
 export default function BlogCard({ post }: { post: PostMeta }) {
   const t = useTranslations('blog');
 
-  // Category label from translations — no hardcoded map
+  // Category label from translations, with no hardcoded map
   const categoryLabel = t(`categories.${post.category}` as Parameters<typeof t>[0]);
 
   return (

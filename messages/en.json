@@ -15,89 +15,51 @@
     "online": "Online"
   },
   "hero": {
-    "eyebrow": "An internet character in the wild",
+    "eyebrow": "A masked character on the internet",
     "line1": "TUMBLER",
     "line2": "PIGEON",
     "artwork_alt": "Illustrated TumblerPigeon masked character surrounded by pigeons and cats",
-    "intro": "Masked observations, visual detours, and slightly unhinged transmissions from somewhere on the internet.",
+    "intro": "Short videos, odd ideas, and whatever the mask gets into next.",
     "primary_cta": "Watch on TikTok",
     "secondary_cta": "See Instagram",
-    "footer_left": "New sightings arrive without warning",
-    "footer_right": "Scroll to inspect",
+    "footer_left": "New posts arrive without a schedule",
+    "footer_right": "More below",
     "meta": {
-      "subject_label": "Subject",
-      "subject": "Tumbler Pigeon",
+      "persona_label": "Persona",
+      "persona": "Tumbler Pigeon",
       "identity_label": "Identity",
       "identity": "Unknown",
-      "status_label": "Status",
-      "status": "Online",
-      "location_label": "Location",
-      "location": "Undisclosed"
-    }
-  },
-  "featured": {
-    "label": "Featured sightings",
-    "title": "FROM THE FEED.",
-    "intro": "Three recurring shapes in the TumblerPigeon signal. Placeholder transmissions today; real posts, films, and sightings tomorrow.",
-    "open_channel": "Open channel",
-    "short_form": {
-      "platform": "TikTok / Short form",
-      "title": "QUICK SIGHTINGS",
-      "body": "Fast character moments, odd observations, and ideas built for the scroll."
-    },
-    "visuals": {
-      "platform": "Instagram / Visual",
-      "title": "MASK STUDIES",
-      "body": "Frames, edits, objects, and visual fragments from the TumblerPigeon world."
-    },
-    "dispatches": {
-      "platform": "Patreon / Dispatch",
-      "title": "BEHIND THE SIGNAL",
-      "body": "Longer notes and off-feed material for anyone following the trail."
+      "online": "Online"
     }
   },
   "about": {
-    "label": "About the subject",
+    "label": "About",
     "title_line1": "THE FACE STAYS",
     "title_line2": "OUT OF FRAME.",
-    "body": "TumblerPigeon is a masked internet persona collecting strange details, visual jokes, character moments, and whatever else refuses to fit neatly into a category.",
-    "note_label": "Field note",
-    "note": "The character is consistent. The format is not.",
-    "details": {
-      "face": {
-        "label": "Face",
-        "value": "Obscured"
-      },
-      "frequency": {
-        "label": "Frequency",
-        "value": "Irregular"
-      },
-      "format": {
-        "label": "Format",
-        "value": "Unfixed"
-      }
-    }
+    "body": "TumblerPigeon is a masked internet character making videos, images, and things that do not fit neatly into one category.",
+    "aside_label": "In short",
+    "aside": "No fixed format. Just the character and whatever feels worth making."
   },
   "pigeonarc": {
-    "label": "Another corner of the nest",
-    "body": "Games and software live at PigeonArc, a related anonymous brand with its own signal and purpose.",
-    "cta": "Enter PigeonArc"
+    "label": "Games and software",
+    "body": "Games and software have their own home at PigeonArc.",
+    "cta": "Visit PigeonArc"
   },
   "merch_home": {
-    "label": "Evidence locker / Merch",
-    "title_line1": "WEAR THE",
-    "title_line2": "SIGHTING.",
-    "body": "TumblerPigeon objects are taking shape: limited pieces, odd details, and character-first designs. Nothing mass-produced. Nothing rushed.",
-    "cta": "Inspect the drop",
-    "edition": "Drop 00",
-    "sample_label": "Concept sample / not final"
+    "label": "Merch / Coming soon",
+    "title_line1": "FIRST DROP",
+    "title_line2": "COMING SOON.",
+    "body": "We are working on the first TumblerPigeon merch. Details will be shared when it is ready.",
+    "cta": "Visit the merch page",
+    "edition": "Coming soon",
+    "sample_label": "Early visual concept"
   },
   "social": {
-    "label": "Open channels",
-    "status": "Signal active",
-    "title_line1": "FOLLOW THE",
-    "title_line2": "SIGHTINGS.",
-    "body": "The feed moves fast. These are the places to catch TumblerPigeon in motion."
+    "label": "Elsewhere",
+    "handle": "@tumblerpigeon_",
+    "title_line1": "FOLLOW ALONG",
+    "title_line2": "ONLINE.",
+    "body": "New posts show up on these platforms."
   },
   "newsletter": {
     "title": "GET THE DISPATCH",
@@ -156,18 +118,15 @@
     "fine_print": "Limited releases. No mass production."
   },
   "footer": {
-    "signal_label": "End of current transmission",
-    "tagline": "A masked internet persona. Sightings, images, objects, and other loose signals.",
-    "navigate": "Index",
-    "elsewhere": "Channels",
-    "related": "Related signal",
+    "tagline": "The public home of TumblerPigeon, a masked character on the internet.",
+    "navigate": "Pages",
+    "elsewhere": "Social",
+    "related": "More",
     "home": "Home",
     "about": "About",
     "merch": "Merch",
     "contact": "Contact",
-    "status": "Status",
-    "online": "Online",
     "rights": "All rights reserved.",
-    "made": "Location undisclosed."
+    "made": "Made for the internet."
   }
 }

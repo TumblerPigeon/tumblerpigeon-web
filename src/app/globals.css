@@ -79,10 +79,11 @@ body > * {
 }
 
 .editorial-label {
-  font-family: var(--font-space-mono), monospace;
-  font-size: 0.6875rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-size: 0.71875rem;
+  font-weight: 600;
   line-height: 1.4;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
@@ -99,72 +100,6 @@ body > * {
 /* Kept for the existing merch route, now using the single brand accent. */
 .hero-gradient {
   background: radial-gradient(circle at 50% 10%, rgb(var(--color-accent) / 0.13), transparent 52%);
-}
-
-.content-visual {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: rgb(var(--color-surface));
-}
-
-.content-visual::before,
-.content-visual::after {
-  content: '';
-  position: absolute;
-  pointer-events: none;
-}
-
-.content-visual--signal::before {
-  width: 58%;
-  aspect-ratio: 1;
-  right: -12%;
-  top: -28%;
-  border: 1px solid rgb(var(--color-accent) / 0.75);
-  border-radius: 50%;
-  box-shadow: 0 0 0 2.5rem rgb(var(--color-accent) / 0.08), 0 0 0 5rem rgb(var(--color-accent) / 0.035);
-}
-
-.content-visual--signal::after {
-  width: 42%;
-  height: 2px;
-  left: 7%;
-  bottom: 18%;
-  background: rgb(var(--color-ink) / 0.34);
-  transform: rotate(-8deg);
-}
-
-.content-visual--frame::before {
-  inset: 11%;
-  border: 1px solid rgb(var(--color-ink) / 0.2);
-  transform: rotate(4deg);
-}
-
-.content-visual--frame::after {
-  width: 7rem;
-  height: 7rem;
-  right: 13%;
-  bottom: 10%;
-  background: rgb(var(--color-accent));
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-}
-
-.content-visual--archive::before {
-  inset: 0;
-  background: repeating-linear-gradient(
-    -9deg,
-    transparent 0 24px,
-    rgb(var(--color-ink) / 0.075) 24px 25px
-  );
-}
-
-.content-visual--archive::after {
-  width: 34%;
-  height: 140%;
-  left: 48%;
-  top: -20%;
-  background: rgb(var(--color-accent) / 0.82);
-  transform: rotate(16deg);
 }
 
 .motion-reveal {

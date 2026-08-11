@@ -25,7 +25,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TumblerPigeon — Creator. Persona. Internet.',
+    default: 'TumblerPigeon | Creator. Persona. Internet.',
     template: '%s | TumblerPigeon',
   },
   description:

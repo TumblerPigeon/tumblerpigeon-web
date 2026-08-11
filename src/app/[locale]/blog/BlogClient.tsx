@@ -11,7 +11,7 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLang, setActiveLang] = useState<'all' | 'en' | 'tr'>('all');
 
-  // Categories built from translations — no hardcoded labels
+  // Categories built from translations, with no hardcoded labels
   const CATEGORIES = [
     { id: 'all', label: t('all') },
     { id: 'game-dev', label: t('categories.game-dev') },
@@ -49,7 +49,7 @@ export default function BlogClient({ posts }: { posts: PostMeta[] }) {
       {/* Filters */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-          {/* Category tabs — labels come from t() */}
+          {/* Category tab labels come from t(). */}
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((cat) => (
               <button

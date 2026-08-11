@@ -8,8 +8,8 @@ export default function SocialSection() {
     <section className="border-y border-bg/20 bg-brand-accent px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="editorial-label flex items-center justify-between border-b border-bg/25 pb-4">
-          <span>05 — {t('label')}</span>
-          <span>{t('status')}</span>
+          <span>04 / {t('label')}</span>
+          <span>{t('handle')}</span>
         </div>
 
         <div className="grid gap-12 py-14 lg:grid-cols-12 lg:items-end">

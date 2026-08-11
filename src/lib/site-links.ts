@@ -1,8 +1,8 @@
 export const SITE_LINKS = {
-  tiktok: 'https://tiktok.com/@tumblerpigeon',
-  instagram: 'https://instagram.com/tumblerpigeon',
-  patreon: 'https://patreon.com/tumblerpigeon',
-  pigeonarc: 'https://pigeonarc.com',
+  tiktok: 'https://www.tiktok.com/@tumblerpigeon_',
+  instagram: 'https://www.instagram.com/tumblerpigeon_/',
+  patreon: 'https://www.patreon.com/cw/PigeonsNest',
+  pigeonarc: 'https://pigeonarc.com/',
 } as const;
 
 export const CREATOR_SOCIALS = [

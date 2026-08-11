@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import ContactForm from '@/components/ContactForm';
+import { SITE_LINKS } from '@/lib/site-links';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -29,9 +30,9 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
   const t = useTranslations('contact');
 
   const socials = [
-    { label: 'TikTok', handle: '@tumblerpigeon', href: 'https://tiktok.com/@tumblerpigeon' },
-    { label: 'Instagram', handle: '@tumblerpigeon', href: 'https://instagram.com/tumblerpigeon' },
-    { label: 'Patreon', handle: 'patreon.com/tumblerpigeon', href: 'https://patreon.com/tumblerpigeon' },
+    { label: 'TikTok', handle: '@tumblerpigeon_', href: SITE_LINKS.tiktok },
+    { label: 'Instagram', handle: '@tumblerpigeon_', href: SITE_LINKS.instagram },
+    { label: 'Patreon', handle: 'PigeonsNest', href: SITE_LINKS.patreon },
   ];
 
   return (

@@ -15,89 +15,51 @@
     "online": "Çevrimiçi"
   },
   "hero": {
-    "eyebrow": "Doğal ortamında bir internet karakteri",
+    "eyebrow": "İnternette maskeli bir karakter",
     "line1": "TUMBLER",
     "line2": "PIGEON",
     "artwork_alt": "Güvercinler ve kedilerle çevrili, maskeli TumblerPigeon karakterinin illüstrasyonu",
-    "intro": "İnternetin bilinmeyen bir köşesinden maskeli gözlemler, görsel sapmalar ve hafif kontrolsüz yayınlar.",
+    "intro": "Kısa videolar, tuhaf fikirler ve maskenin sıradaki işi.",
     "primary_cta": "TikTok'ta İzle",
     "secondary_cta": "Instagram'a Bak",
-    "footer_left": "Yeni görüntüler habersiz gelir",
-    "footer_right": "İncelemek için kaydır",
+    "footer_left": "Yeni paylaşımlar belli bir takvime bağlı değil",
+    "footer_right": "Devamı aşağıda",
     "meta": {
-      "subject_label": "Konu",
-      "subject": "Tumbler Pigeon",
+      "persona_label": "Persona",
+      "persona": "Tumbler Pigeon",
       "identity_label": "Kimlik",
       "identity": "Bilinmiyor",
-      "status_label": "Durum",
-      "status": "Çevrimiçi",
-      "location_label": "Konum",
-      "location": "Açıklanmadı"
-    }
-  },
-  "featured": {
-    "label": "Öne çıkan görüntüler",
-    "title": "AKIŞTAN GELENLER.",
-    "intro": "TumblerPigeon sinyalinin tekrar eden üç biçimi. Bugün temsili yayınlar; yarın gerçek gönderiler, videolar ve yeni görüntüler.",
-    "open_channel": "Kanalı aç",
-    "short_form": {
-      "platform": "TikTok / Kısa video",
-      "title": "ANLIK GÖRÜNTÜLER",
-      "body": "Akış için hazırlanan hızlı karakter anları, tuhaf gözlemler ve fikirler."
-    },
-    "visuals": {
-      "platform": "Instagram / Görsel",
-      "title": "MASKE ÇALIŞMALARI",
-      "body": "TumblerPigeon dünyasından kareler, kurgular, nesneler ve görsel parçalar."
-    },
-    "dispatches": {
-      "platform": "Patreon / Notlar",
-      "title": "SİNYALİN ARKASI",
-      "body": "İzi takip edenler için daha uzun notlar ve akış dışında kalan malzemeler."
+      "online": "Çevrimiçi"
     }
   },
   "about": {
-    "label": "Konu hakkında",
+    "label": "Hakkında",
     "title_line1": "YÜZ KADRAJIN",
     "title_line2": "DIŞINDA KALIR.",
-    "body": "TumblerPigeon; tuhaf ayrıntıları, görsel şakaları, karakter anlarını ve hiçbir kategoriye usulca sığmayan ne varsa toplayan maskeli bir internet personasıdır.",
-    "note_label": "Saha notu",
-    "note": "Karakter tutarlı. Format değil.",
-    "details": {
-      "face": {
-        "label": "Yüz",
-        "value": "Gizli"
-      },
-      "frequency": {
-        "label": "Sıklık",
-        "value": "Düzensiz"
-      },
-      "format": {
-        "label": "Format",
-        "value": "Sabit değil"
-      }
-    }
+    "body": "TumblerPigeon, videolar ve görseller üreten; kendini tek bir kategoriyle sınırlamayan maskeli bir internet karakteridir.",
+    "aside_label": "Kısaca",
+    "aside": "Sabit bir format yok. Karakter ve üretmeye değer gelen fikirler var."
   },
   "pigeonarc": {
-    "label": "Yuvanın başka bir köşesi",
-    "body": "Oyunlar ve yazılımlar, kendine ait sinyali ve amacı olan bağlantılı anonim marka PigeonArc'ta yaşar.",
-    "cta": "PigeonArc'a Gir"
+    "label": "Oyunlar ve yazılım",
+    "body": "Oyunların ve yazılımların ayrı adresi PigeonArc.",
+    "cta": "PigeonArc'ı Ziyaret Et"
   },
   "merch_home": {
-    "label": "Kanıt dolabı / Ürünler",
-    "title_line1": "GÖRÜNTÜYÜ",
-    "title_line2": "ÜZERİNDE TAŞI.",
-    "body": "TumblerPigeon nesneleri şekilleniyor: sınırlı parçalar, tuhaf detaylar ve karakteri öne çıkaran tasarımlar. Seri üretim yok. Acele yok.",
-    "cta": "Seriyi incele",
-    "edition": "Seri 00",
-    "sample_label": "Konsept örneği / nihai değil"
+    "label": "Ürünler / Yakında",
+    "title_line1": "İLK SERİ",
+    "title_line2": "YAKINDA.",
+    "body": "İlk TumblerPigeon ürünleri üzerinde çalışıyoruz. Hazır olduğunda ayrıntıları paylaşacağız.",
+    "cta": "Mağaza sayfasına git",
+    "edition": "Yakında",
+    "sample_label": "İlk görsel taslak"
   },
   "social": {
-    "label": "Açık kanallar",
-    "status": "Sinyal aktif",
-    "title_line1": "GÖRÜNTÜLERİ",
+    "label": "Diğer kanallar",
+    "handle": "@tumblerpigeon_",
+    "title_line1": "İNTERNETTE",
     "title_line2": "TAKİP ET.",
-    "body": "Akış hızlı ilerliyor. TumblerPigeon'ı hareket hâlinde yakalayabileceğin yerler bunlar."
+    "body": "Yeni paylaşımlar bu platformlarda yayınlanıyor."
   },
   "newsletter": {
     "title": "GÜNCELLEMELERİ AL",
@@ -156,18 +118,15 @@
     "fine_print": "Sınırlı seriler. Seri üretim yok."
   },
   "footer": {
-    "signal_label": "Mevcut yayının sonu",
-    "tagline": "Maskeli bir internet personası. Görüntüler, nesneler ve başıboş dolaşan başka sinyaller.",
-    "navigate": "Dizin",
-    "elsewhere": "Kanallar",
-    "related": "Bağlantılı sinyal",
+    "tagline": "Maskeli internet karakteri TumblerPigeon'ın resmi adresi.",
+    "navigate": "Sayfalar",
+    "elsewhere": "Sosyal medya",
+    "related": "Diğer",
     "home": "Ana Sayfa",
     "about": "Hakkında",
     "merch": "Mağaza",
     "contact": "İletişim",
-    "status": "Durum",
-    "online": "Çevrimiçi",
     "rights": "Tüm hakları saklıdır.",
-    "made": "Konum açıklanmadı."
+    "made": "İnternet için yapıldı."
   }
 }

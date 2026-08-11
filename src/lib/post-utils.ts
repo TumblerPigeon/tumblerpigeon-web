@@ -1,4 +1,4 @@
-// Pure utility functions — no Node.js dependencies, safe for client components
+// Pure utility functions with no Node.js dependencies, safe for client components
 
 export function getCategoryBg(category: string): string {
   const map: Record<string, string> = {
