@@ -1,12 +1,14 @@
 import { useTranslations } from 'next-intl';
 import { CREATOR_SOCIALS } from '@/lib/site-links';
+import SectionRibbons from './SectionRibbons';
 
 export default function SocialSection() {
   const t = useTranslations('social');
 
   return (
-    <section className="border-y border-bg/20 bg-brand-accent px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
-      <div className="mx-auto max-w-7xl">
+    <section className="relative isolate overflow-hidden border-y border-bg/20 bg-brand-accent px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
+      <SectionRibbons variant="social" />
+      <div className="relative z-10 mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
             <h2 className="font-display text-[clamp(5.5rem,15vw,12rem)] leading-[0.75] tracking-[0.025em]">

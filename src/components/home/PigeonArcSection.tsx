@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { SITE_LINKS } from '@/lib/site-links';
+import SectionRibbons from './SectionRibbons';
 
 export default function PigeonArcSection() {
   const t = useTranslations('pigeonarc');
 
   return (
-    <section className="border-b editorial-rule px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
+    <section className="relative isolate overflow-hidden border-b editorial-rule px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
+      <SectionRibbons variant="pigeonarc" />
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
         <div className="flex min-h-48 items-center justify-center px-4 py-8 sm:min-h-56 sm:px-8 sm:py-10 lg:col-span-5 lg:min-h-72 lg:px-6">
           <Image
             src="/images/PA_Logo_Horizontal.png"

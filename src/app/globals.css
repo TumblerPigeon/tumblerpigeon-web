@@ -118,6 +118,148 @@ body > * {
   }
 }
 
+.section-ribbons {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.section-ribbons__arc,
+.section-ribbons__band {
+  position: absolute;
+  display: block;
+  border-radius: 9999px;
+}
+
+.section-ribbons__arc {
+  width: 39rem;
+  height: 19rem;
+  border-style: solid;
+}
+
+.section-ribbons__band {
+  width: 27rem;
+  height: 3.25rem;
+}
+
+.section-ribbons--about .section-ribbons__arc {
+  top: 5%;
+  right: -19rem;
+  border-width: 3.5rem;
+  border-color: rgb(var(--color-ink) / 0.055);
+  transform: rotate(-12deg);
+}
+
+.section-ribbons--about .section-ribbons__band {
+  bottom: 2.5rem;
+  left: -11rem;
+  background: rgb(var(--color-accent) / 0.085);
+  transform: rotate(13deg);
+}
+
+.section-ribbons--pigeonarc .section-ribbons__arc {
+  bottom: -8rem;
+  left: -19rem;
+  border-width: 3.5rem;
+  border-color: rgb(var(--color-accent) / 0.06);
+  transform: rotate(9deg);
+}
+
+.section-ribbons--pigeonarc .section-ribbons__band {
+  top: 3.5rem;
+  right: -12rem;
+  background: rgb(var(--color-ink) / 0.045);
+  transform: rotate(-10deg);
+}
+
+.section-ribbons--merch .section-ribbons__arc {
+  top: -6rem;
+  right: -18rem;
+  border-width: 3.5rem;
+  border-color: rgb(var(--color-canvas) / 0.075);
+  transform: rotate(8deg);
+}
+
+.section-ribbons--merch .section-ribbons__band {
+  bottom: 3rem;
+  left: -12rem;
+  background: rgb(var(--color-accent) / 0.12);
+  transform: rotate(-10deg);
+}
+
+.section-ribbons--social .section-ribbons__arc {
+  top: -7rem;
+  left: -18rem;
+  border-width: 4rem;
+  border-color: rgb(var(--color-canvas) / 0.13);
+  transform: rotate(-8deg);
+}
+
+.section-ribbons--social .section-ribbons__band {
+  right: -12rem;
+  bottom: 3rem;
+  background: rgb(var(--color-ink) / 0.14);
+  transform: rotate(10deg);
+}
+
+@media (min-width: 640px) {
+  .section-ribbons__arc {
+    width: 70rem;
+    height: 34rem;
+  }
+
+  .section-ribbons__band {
+    width: 48rem;
+    height: 5rem;
+  }
+
+  .section-ribbons--about .section-ribbons__arc {
+    top: -5rem;
+    right: -28rem;
+    border-width: 7rem;
+  }
+
+  .section-ribbons--about .section-ribbons__band {
+    bottom: 5rem;
+    left: -18rem;
+  }
+
+  .section-ribbons--pigeonarc .section-ribbons__arc {
+    bottom: -14rem;
+    left: -29rem;
+    border-width: 6rem;
+  }
+
+  .section-ribbons--pigeonarc .section-ribbons__band {
+    top: 5rem;
+    right: -16rem;
+  }
+
+  .section-ribbons--merch .section-ribbons__arc {
+    top: -8rem;
+    right: -28rem;
+    border-width: 6.5rem;
+  }
+
+  .section-ribbons--merch .section-ribbons__band {
+    bottom: 4rem;
+    left: -16rem;
+  }
+
+  .section-ribbons--social .section-ribbons__arc {
+    top: -13rem;
+    left: -27rem;
+    border-width: 7rem;
+  }
+
+  .section-ribbons--social .section-ribbons__band {
+    right: -15rem;
+    bottom: 4rem;
+  }
+}
+
 /* Kept for the existing merch route, now using the single brand accent. */
 .hero-gradient {
   background: radial-gradient(circle at 50% 10%, rgb(var(--color-accent) / 0.13), transparent 52%);

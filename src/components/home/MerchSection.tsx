@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
+import SectionRibbons from './SectionRibbons';
 
 export default function MerchSection() {
   const t = useTranslations('merch_home');
 
   return (
-    <section className="overflow-hidden bg-cream px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center">
+    <section className="relative isolate overflow-hidden bg-cream px-4 py-20 text-bg sm:px-6 lg:px-8 lg:py-28">
+      <SectionRibbons variant="merch" />
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
           <h2 className="font-display text-[clamp(5rem,13vw,10rem)] leading-[0.78] tracking-[0.035em]">
             {t('title_line1')}
