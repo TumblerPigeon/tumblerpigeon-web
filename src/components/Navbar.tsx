@@ -103,6 +103,17 @@ export default function Navbar() {
               </Link>
             ))}
             <a
+              href={SITE_LINKS.patreon}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-h-11 px-3 py-3 text-sm font-semibold text-cream-muted transition-colors hover:text-cream"
+            >
+              {t('patreon')}
+            </a>
+          </div>
+
+          <div className="flex items-center border-r border-cream/15 px-4">
+            <a
               href={SITE_LINKS.pigeonarc}
               target="_blank"
               rel="noopener noreferrer"
@@ -112,7 +123,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="flex items-center gap-1 pl-4">
+          <div className="flex items-center gap-1 border-r border-cream/15 px-4">
             <a
               href={SITE_LINKS.tiktok}
               target="_blank"
@@ -131,14 +142,15 @@ export default function Navbar() {
             >
               <InstagramIcon />
             </a>
-            <button
-              onClick={switchLocale}
-              aria-label={t('switch_language')}
-              className="ml-2 min-h-10 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
-            >
-              {activeLocale}
-            </button>
           </div>
+
+          <button
+            onClick={switchLocale}
+            aria-label={t('switch_language')}
+            className="ml-4 min-h-10 border border-cream/15 px-3 py-2 text-sm font-semibold text-cream transition-colors hover:border-brand-accent hover:text-brand-accent"
+          >
+            {activeLocale}
+          </button>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
@@ -176,6 +188,15 @@ export default function Navbar() {
                   <span className="text-brand-accent transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
                 </Link>
               ))}
+              <a
+                href={SITE_LINKS.patreon}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block border-b editorial-rule py-4 text-cream"
+              >
+                <span className="font-display text-5xl tracking-[0.045em] sm:text-6xl">{t('patreon')}</span>
+              </a>
               <a
                 href={SITE_LINKS.pigeonarc}
                 target="_blank"
