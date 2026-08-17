@@ -1,8 +1,23 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/navigation';
 
 const CONTACT_EMAIL = 'tp@tumblerpigeon.com';
+const productionUrl = 'https://www.tumblerpigeon.com';
+
+export function generateMetadata({ params: { locale } }: { params: { locale: string } }): Metadata {
+  return {
+    alternates: {
+      canonical: `${productionUrl}/${locale}/merch`,
+      languages: {
+        en: `${productionUrl}/en/merch`,
+        tr: `${productionUrl}/tr/merch`,
+        'x-default': `${productionUrl}/en/merch`,
+      },
+    },
+  };
+}
 
 export default function MerchPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);

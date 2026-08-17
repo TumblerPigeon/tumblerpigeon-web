@@ -54,34 +54,6 @@
     "title_line2": "TAKİPTE KAL.",
     "body": "Yeni paylaşımlar burada."
   },
-  "newsletter": {
-    "title": "GÜNCELLEMELERİ AL",
-    "subtitle": "İnternetin farklı köşelerinden ara sıra TumblerPigeon güncellemeleri.",
-    "placeholder": "email@adresin.com",
-    "button": "Abone Ol",
-    "disclaimer": "Spam yok. İstediğinde çıkabilirsin."
-  },
-  "blog": {
-    "title": "BLOG",
-    "subtitle": "Geliştirme günlükleri, ürün incelemeleri ve kaotik bir indie hayatından haberler.",
-    "search_placeholder": "Yazı ara...",
-    "all": "Tümü",
-    "read_more": "Devamını Oku",
-    "min_read": "dk okuma",
-    "no_posts": "Yazı bulunamadı. Yakında kontrol et.",
-    "nothing_label": "HİÇBİR ŞEY.",
-    "categories": {
-      "game-dev": "Oyun Geliştirme",
-      "income-business": "Gelir & İş",
-      "product-reviews": "Ürün İncelemeleri",
-      "life-misc": "Yaşam & Çeşitli"
-    }
-  },
-  "post": {
-    "back": "← Blog'a Dön",
-    "related": "İlgili Yazılar",
-    "comments": "Yorumlar"
-  },
   "contact": {
     "title": "İLETİŞİME GEÇ",
     "subtitle": "İş birlikleri, iş, basın veya maskenin ardındaki personaya bir mesaj için.",

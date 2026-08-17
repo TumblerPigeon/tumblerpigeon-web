@@ -54,34 +54,6 @@
     "title_line2": "ONLINE.",
     "body": "New posts show up on these platforms."
   },
-  "newsletter": {
-    "title": "GET THE DISPATCH",
-    "subtitle": "Occasional TumblerPigeon updates from across the internet.",
-    "placeholder": "your@email.com",
-    "button": "Subscribe",
-    "disclaimer": "No spam. Unsubscribe whenever."
-  },
-  "blog": {
-    "title": "THE BLOG",
-    "subtitle": "Dev logs, hot takes, product reviews, and dispatches from a chaotic indie life.",
-    "search_placeholder": "Search posts...",
-    "all": "All",
-    "read_more": "Read More",
-    "min_read": "min read",
-    "no_posts": "No posts found. Check back soon.",
-    "nothing_label": "NOTHING.",
-    "categories": {
-      "game-dev": "Game Dev",
-      "income-business": "Income & Business",
-      "product-reviews": "Product Reviews",
-      "life-misc": "Life & Misc"
-    }
-  },
-  "post": {
-    "back": "← Back to Blog",
-    "related": "Related Posts",
-    "comments": "Comments"
-  },
   "contact": {
     "title": "GET IN TOUCH",
     "subtitle": "For collaborations, business, press, or a message for the persona behind the mask.",

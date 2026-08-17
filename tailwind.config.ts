@@ -4,7 +4,7 @@ import { fontFamily } from 'tailwindcss/defaultTheme';
 const color = (token: string) => `rgb(var(${token}) / <alpha-value>)`;
 
 const config: Config = {
-  content: ['./src/**/*.{ts,tsx,mdx}', './content/**/*.mdx'],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -42,26 +42,9 @@ const config: Config = {
           to: { opacity: '1', transform: 'translateY(0)' },
         },
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            '--tw-prose-body': 'rgb(var(--color-ink-muted))',
-            '--tw-prose-headings': 'rgb(var(--color-ink))',
-            '--tw-prose-links': 'rgb(var(--color-accent))',
-            '--tw-prose-bold': 'rgb(var(--color-ink))',
-            '--tw-prose-code': 'rgb(var(--color-ink))',
-            '--tw-prose-pre-bg': 'rgb(var(--color-surface))',
-            '--tw-prose-pre-code': 'rgb(var(--color-ink))',
-            '--tw-prose-hr': 'rgb(var(--color-ink) / 0.12)',
-            '--tw-prose-quotes': 'rgb(var(--color-ink-muted))',
-            '--tw-prose-quote-borders': 'rgb(var(--color-accent))',
-            maxWidth: 'none',
-          },
-        },
-      },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [],
 };
 
 export default config;

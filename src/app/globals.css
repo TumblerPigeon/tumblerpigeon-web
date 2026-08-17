@@ -273,38 +273,6 @@ hr {
   border-color: rgb(var(--color-ink) / 0.1);
 }
 
-.prose h1,
-.prose h2,
-.prose h3,
-.prose h4 {
-  font-family: var(--font-bebas), sans-serif;
-  letter-spacing: 0.055em;
-  font-weight: 400;
-}
-
-.prose a {
-  text-decoration-color: rgb(var(--color-accent));
-  text-underline-offset: 3px;
-}
-
-.prose code:not(pre code) {
-  padding: 0.15em 0.4em;
-  border: 1px solid rgb(var(--color-ink) / 0.1);
-  border-radius: 2px;
-  background: rgb(var(--color-ink) / 0.05);
-  font-size: 0.875em;
-}
-
-.prose blockquote {
-  border-left-width: 3px;
-  border-left-color: rgb(var(--color-accent));
-  font-style: normal;
-}
-
-.prose img {
-  border: 1px solid rgb(var(--color-ink) / 0.08);
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

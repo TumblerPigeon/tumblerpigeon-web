@@ -3,6 +3,9 @@ import { Bebas_Neue, Space_Grotesk } from 'next/font/google';
 import { headers } from 'next/headers';
 import './globals.css';
 
+const siteDescription =
+  'TumblerPigeon is an anonymous masked creator identity sharing original content, visual experiments, and internet culture.';
+
 const bebasNeue = Bebas_Neue({
   weight: '400',
   subsets: ['latin'],
@@ -17,13 +20,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.tumblerpigeon.com'),
   title: 'Tumbler Pigeon',
-  description:
-    'TumblerPigeon is an anonymous masked creator identity sharing original content, visual experiments, and internet culture.',
+  description: siteDescription,
   keywords: ['content creator', 'social media creator', 'internet culture', 'TumblerPigeon'],
   icons: { icon: '/images/logo.png' },
-  openGraph: { siteName: 'TumblerPigeon', type: 'website' },
-  twitter: { card: 'summary_large_image', creator: '@tumblerpigeon_' },
+  openGraph: {
+    title: 'Tumbler Pigeon',
+    description: siteDescription,
+    siteName: 'TumblerPigeon',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tumbler Pigeon',
+    description: siteDescription,
+    creator: '@tumblerpigeon_',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
